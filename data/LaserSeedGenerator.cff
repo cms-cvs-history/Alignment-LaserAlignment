@@ -1,0 +1,12 @@
+# Tracker Reco Geometry
+include "RecoTracker/GeometryESProducer/data/TrackerRecoGeometryESProducer.cfi"
+# stripCPE
+include "RecoLocalTracker/SiStripRecHitConverter/data/StripCPEfromTrackAngle.cfi"
+# pixelCPE
+include "RecoLocalTracker/SiPixelRecHits/data/PixelCPEParmError.cfi"
+
+#TransientTrackingBuilder
+include "RecoTracker/TransientTrackingRecHit/data/TransientTrackingRecHitBuilder.cfi"
+
+#Laser Seed finding
+include "Alignment/LaserAlignment/data/LaserSeedGenerator.cfi"

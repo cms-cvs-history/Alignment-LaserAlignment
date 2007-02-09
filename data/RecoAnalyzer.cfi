@@ -1,0 +1,39 @@
+# configuration of the RecoAnalyzer
+#
+# makes some plots of the reconstruction
+module RecoAnalyzer = RecoAnalyzer 
+{
+  untracked string ROOTFileName = "RecoAnalyzer.histos.root"
+  untracked int32 ROOTFileCompression = 1
+  untracked double SearchWindowPhiTIB = 0.05
+  untracked double SearchWindowPhiTOB = 0.05
+  untracked double SearchWindowPhiTEC = 0.05
+  untracked double SearchWindowZTIB = 1.0
+  untracked double SearchWindowZTOB = 1.0
+  string ClusterProducer = "siStripClusters" 
+  string RecHitProducer = "siStripMatchedRecHits"
+
+  # list of digi producers
+  VPSet DigiProducersList = 
+  {
+ 	{ string DigiProducer = "siStripDigis"
+          string DigiLabel    = "\0"
+        }
+
+	# { string DigiProducer = "RawToDigi"
+	#   string DigiLabel    = "ZeroSuppressed"
+	# },
+
+	# { string DigiProducer = "theSiStripZeroSuppression"
+	#   string DigiLabel    = "fromVirginRaw"
+	# },
+
+	# { string DigiProducer = "theSiStripZeroSuppression"
+	#   string DigiLabel    = "fromProcessedRaw"
+	# },
+   
+	# { string DigiProducer = "theSiStripZeroSuppression"
+	#   string DigiLabel    = "fromScopeMode"
+	# }
+  } 
+}

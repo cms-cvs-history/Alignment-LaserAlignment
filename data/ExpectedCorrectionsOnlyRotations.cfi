@@ -1,0 +1,142 @@
+# configuration of the ExpectedCorrectionsCalculator
+#
+# we need here the applied misalignments to calculate expected ones
+#
+
+module ExpectedCorrectionsCalculator = ExpectedAlignmentCorrectionsCalculator
+{
+    // Applied Distortions. Needed To Calculate The Expected Corrections
+    // -- Tec+ -- //
+    PSet TEC1 = {
+	PSet EndcapLayer1 = {
+	    double dX   =  0.000
+	    double dY   =  0.000
+	    double phiZ =  0.000
+	}
+	PSet EndcapLayer2 = {
+	    double dX   =  0.00
+	    double dY   =  0.00
+	    double phiZ =  0.000230
+	}
+	PSet EndcapLayer3 = {
+	    double dX   =  0.00
+	    double dY   =  0.00
+	    double phiZ = -0.000070
+	}
+	PSet EndcapLayer4 = {
+	    double dX   =  0.00
+	    double dY   =  0.00
+	    double phiZ =  0.000120
+	}
+	PSet EndcapLayer5 = {
+	    double dX   =  0.00
+	    double dY   =  0.00
+	    double phiZ =  0.000180
+	}
+	PSet EndcapLayer6 = {
+	    double dX   =  0.00
+	    double dY   =  0.00
+	    double phiZ = -0.000140
+	}
+	PSet EndcapLayer7 = {
+	    double dX   =  0.00
+	    double dY   =  0.00
+	    double phiZ =  0.000150
+	}
+	PSet EndcapLayer8 = {
+	    double dX   =  0.00
+	    double dY   =  0.00
+	    double phiZ =  0.000190
+	}
+	PSet EndcapLayer9 = {
+	    double dX   =  0.00
+	    double dY   =  0.00
+	    double phiZ =  0.000300
+	}
+    }
+    
+    // -- Tec- -- //
+    PSet TEC2 = {
+	PSet EndcapLayer1 = {
+	    double dX   =  0.000
+	    double dY   =  0.000
+	    double phiZ =  0.000
+	}
+	PSet EndcapLayer2 = {
+	    double dX   =  0.00
+	    double dY   =  0.00
+	    double phiZ =  0.000330
+	}
+	PSet EndcapLayer3 = {
+	    double dX   =  0.000
+	    double dY   =  0.000
+	    double phiZ = -0.000110
+	}
+	PSet EndcapLayer4 = {
+	    double dX   =  0.00
+	    double dY   =  0.00
+	    double phiZ =  0.000140
+	}
+	PSet EndcapLayer5 = {
+	    double dX   =  0.00
+	    double dY   =  0.00
+	    double phiZ =  0.000210
+	}
+	PSet EndcapLayer6 = {
+	    double dX   =  0.00
+	    double dY   =  0.00
+	    double phiZ = -0.000140
+	}
+	PSet EndcapLayer7 = { 
+	    double dX   =  0.00
+	    double dY   =  0.00
+	    double phiZ =  0.000050
+	}
+	PSet EndcapLayer8 = {
+	    double dX   =  0.00
+	    double dY   =  0.00
+	    double phiZ = -0.000190
+	}
+	PSet EndcapLayer9 = {
+	    double dX   =  0.00
+	    double dY   =  0.00
+	    double phiZ =  0.000300
+	}
+    }
+    
+    // -- Tob+ -- //
+    PSet TOB1 = {
+	PSet BarrelLayer1 = {
+	    double dX   =  0.00
+	    double dY   =  0.00
+	    double phiZ = -0.000300
+	}
+    }
+    
+    // -- Tob- -- //
+    PSet TOB2 = {
+	PSet BarrelLayer1 = {
+	    double dX   =  0.00
+	    double dY   =  0.00
+	    double phiZ = -0.000200
+	}
+    }
+    
+    // -- Tib+ -- //
+    PSet TIB1 = {
+	PSet BarrelLayer4 = {
+	    double dX   =  0.00
+	    double dY   =  0.00
+	    double phiZ =  0.000500
+	}
+    }
+    
+    // -- Tib- -- //
+    PSet TIB2 = {
+	PSet BarrelLayer4 = {
+	    double dX   =  0.00
+	    double dY   =  0.00
+	    double phiZ = -0.000400
+	}
+    }
+}

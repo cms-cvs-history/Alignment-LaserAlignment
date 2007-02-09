@@ -1,0 +1,7 @@
+# configuration of the BeamProfileFitter
+#
+PSet BeamProfileFitter =
+{
+   untracked bool ClearHistogramAfterFit = true
+   untracked bool ScaleHistogramBeforeFit = true
+}

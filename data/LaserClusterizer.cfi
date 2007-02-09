@@ -1,0 +1,31 @@
+# configuration of the Laser Clusterizer
+#
+module siStripClusters = LaserClusterizer
+{
+  string ClusterMode = "LaserBeamClusterizer"
+  # width of the clusters in sigma's
+  double ClusterWidth = 1.0
+  string BeamFitProducer = "LaserAlignment"
+  VPSet DigiProducersList = 
+  {
+     { string DigiProducer = "LaserAlignment"
+       string DigiLabel    = "\0"
+     }
+
+     # { string DigiProducer = "RawToDigi"
+     #   string DigiLabel    = "ZeroSuppressed"
+     # },
+
+     # { string DigiProducer = "theSiStripZeroSuppression"
+     #   string DigiLabel    = "fromVirginRaw"
+     # },
+
+     # { string DigiProducer = "theSiStripZeroSuppression"
+     #   string DigiLabel    = "fromProcessedRaw"
+     # },
+   
+     # { string DigiProducer = "theSiStripZeroSuppression"
+     #   string DigiLabel    = "fromScopeMode" 
+     # }
+  } 
+}

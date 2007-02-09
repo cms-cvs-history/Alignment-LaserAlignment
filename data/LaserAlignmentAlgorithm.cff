@@ -1,0 +1,13 @@
+# configuration of the alignment algorithm
+#
+
+PSet AlignmentAlgorithm =
+{
+  # parameters to fix in Millepede (x,y for disc 1)
+  untracked int32 FirstFixedParameterPosTEC = 2
+  untracked int32 SecondFixedParameterPosTEC = 3
+  untracked int32 FirstFixedParameterNegTEC = 2
+  untracked int32 SecondFixedParameterNegTEC = 3
+  untracked int32 FirstFixedParameterTEC2TEC = 2
+  untracked int32 SecondFixedParameterTEC2TEC = 3
+}
