@@ -1,9 +1,13 @@
-/*  
- * Algorithm to read RecHits from the Laser beams
- */
-
 #ifndef LaserAlignment_ReadLaserRecHitAlgorithm_h
 #define LaserAlignment_ReadLaserRecHitAlgorithm_h
+
+/** \class ReadLaserRecHitAlgorithm
+ *  Algorithm to read RecHits from the LaserBeams
+ *
+ *  $Date: Sun Mar 18 19:51:27 CET 2007 $
+ *  $Revision: 1.1 $
+ *  \author Maarten Thomas
+ */
 
 #include <string>
 #include <vector>
@@ -41,13 +45,15 @@
 class ReadLaserRecHitAlgorithm 
 {
  public:
-  
-  ReadLaserRecHitAlgorithm(const edm::ParameterSet& conf);
+  /// constructor
+  ReadLaserRecHit	Algorithm(const edm::ParameterSet& conf);
+	/// destructor
   ~ReadLaserRecHitAlgorithm();
   
 
-  // Runs the algorithm
+  /// Runs the algorithm on a SiStripRecHit2DCollection
   void run(const SiStripRecHit2DCollection* input, const edm::EventSetup& theSetup);
+  /// Runs the algorithm on a SiStripMatchedRecHit2DCollection
   void run(const SiStripMatchedRecHit2DCollection* input, const edm::EventSetup& theSetup);
 
  private:

@@ -1,5 +1,9 @@
-/*
- * small test program to read the RecHits from the laser beams
+/** \file ReadLaserRecHit.cc
+ *  small test program to read the RecHits from the laser beams
+ *
+ *  $Date: Sun Mar 18 19:50:12 CET 2007 $
+ *  $Revision: 1.1 $
+ *  \author Maarten Thomas
  */
 
 #include "Alignment/LaserAlignment/test/ReadLaserRecHit.h"

@@ -1,9 +1,13 @@
-/* 
- * small test program to read RecHits from the laser beams
- */
-
 #ifndef LaserAlignment_ReadLaserRecHit_h
 #define LaserAlignment_ReadLaserRecHit_h
+
+/** \class ReadLaserRecHit
+ *  small test program to read the RecHits from the laser beams
+ *
+ *  $Date: Sun Mar 18 19:50:27 CET 2007 $
+ *  $Revision: 1.1 $
+ *  \author Maarten Thomas
+ */
 
 #include <memory>
 #include <string>
@@ -26,11 +30,11 @@
 class ReadLaserRecHit : public edm::EDAnalyzer
 {
  public:
-  
+  /// constructor
   explicit ReadLaserRecHit(const edm::ParameterSet& conf);
-  
+  /// destructor
   virtual ~ReadLaserRecHit();
-  
+  /// analyze the event content
   virtual void analyze(const edm::Event& e, const edm::EventSetup& c);
   
  private:

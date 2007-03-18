@@ -1,10 +1,13 @@
-/*
- * Calculate the expected alignment
- * corrections from the applied misalignments
- */
-
 #ifndef LaserAlignment_ExpectedAlignmentcorrectionsCalculator_H
 #define LaserAlignment_ExpectedAlignmentCorrectionsCalculator_H
+
+/** \class ExpectedAlignmentCorrectionsCalculator
+ *  Calculate the expected alignment corrections from the applied misalignments
+ *
+ *  $Date: Sun Mar 18 19:48:56 CET 2007 $
+ *  $Revision: 1.1 $
+ *  \author Maarten Thomas
+ */
 
 #include "FWCore/Framework/interface/Frameworkfwd.h"
 #include "FWCore/Framework/interface/EDAnalyzer.h"
@@ -16,13 +19,18 @@
 class ExpectedAlignmentCorrectionsCalculator : public edm::EDAnalyzer 
 {
  public:
+	/// constructor
   explicit ExpectedAlignmentCorrectionsCalculator(const edm::ParameterSet&);
+	/// destructor
   ~ExpectedAlignmentCorrectionsCalculator();
 
 
  private:
+	/// begin job
   virtual void beginJob(const edm::EventSetup&) ;
+	/// analyze the event (nothing done here)
   virtual void analyze(const edm::Event&, const edm::EventSetup&);
+	/// end job
   virtual void endJob() ;
 
   // ----------member data ---------------------------

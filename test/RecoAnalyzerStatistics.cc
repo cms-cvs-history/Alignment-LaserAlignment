@@ -1,5 +1,9 @@
-/*
- * Statistics for the RecoAnalyzer
+/** \file RecoAnalyzerStatistics.cc
+ *  Statistics for the RecoAnalyzer
+ *
+ *  $Date: Sun Mar 18 19:55:47 CET 2007 $
+ *  $Revision: 1.1 $
+ *  \author Maarten Thomas
  */
 
 #include "Alignment/LaserAlignment/test/RecoAnalyzer.h"

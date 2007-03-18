@@ -1,5 +1,9 @@
-/*
- * Analyzer program for Reco results
+/** \file RecoAnalyzer.cc
+ *  Analyzer program for Reco results
+ *
+ *  $Date: Sun Mar 18 19:52:42 CET 2007 $
+ *  $Revision: 1.1 $
+ *  \author Maarten Thomas
  */
 
 #include "Alignment/LaserAlignment/test/RecoAnalyzer.h"

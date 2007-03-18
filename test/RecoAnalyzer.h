@@ -1,10 +1,13 @@
-/*  
- * Analyzer program to make some plots for the reconstruction
- */
-
-
 #ifndef LaserAlignment_RecoAnalyzer_H
 #define LaserAlignment_RecoAnalyzer_H
+
+/** \class RecoAnalyzer
+ *  Analyzer program to make some plots for the reconstruction
+ *
+ *  $Date: Sun Mar 18 19:52:56 CET 2007 $
+ *  $Revision: 1.1 $
+ *  \author Maarten Thomas
+ */
 
 #include "FWCore/Framework/interface/EDAnalyzer.h"
 #include "FWCore/Framework/interface/Event.h"
@@ -57,25 +60,33 @@ class RecoAnalyzer : public edm::EDAnalyzer, public TObject
  public:
   typedef std::vector<edm::ParameterSet> Parameters;
 
+	/// constructor
   explicit RecoAnalyzer(edm::ParameterSet const& theConf);
+	/// destructor
   ~RecoAnalyzer();
   
-  // this method will do the user analysis 
+  /// this method will do the user analysis 
   virtual void analyze(edm::Event const& theEvent, edm::EventSetup const& theSetup);
+	/// begin job
   virtual void beginJob(const edm::EventSetup& theSetup);
 
  private:
+	/// write the ROOT file with the histograms
   void closeRootFile();
-  
+  /// fill adc counts from the laser beams into a histogram
   void fillAdcCounts(TH1D * theHistogram,
 		     edm::DetSet<SiStripDigi>::const_iterator digiRangeIterator,
 		     edm::DetSet<SiStripDigi>::const_iterator digiRangeIteratorEnd);
 
+	/// initialize the histograms
   void initHistograms();
-
+	/// search for dets which are hit by a laser beam and fill the beam profile into a histogram
   void trackerStatistics(edm::Event const& theEvent, edm::EventSetup const& theSetup);
+	/// make plots with Cluster information
   void trackerClusters(edm::Event const& theEvent, edm::EventSetup const& theSetup);
+	/// make plots with RecHits information
   void trackerRecHits(edm::Event const& theEvent, edm::EventSetup const& theSetup);
+	/// print some information about the TrackCandidates
   void trackerTC(edm::Event const& theEvent, edm::EventSetup const& theSetup);
   
  private:

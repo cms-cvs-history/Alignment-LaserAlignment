@@ -1,5 +1,9 @@
-/*
- * some plots for SiStripClusters
+/** \file RecoAnalyzerClusters.cc
+ *  some plots for SiStripClusters
+ *
+ *  $Date: Sun Mar 18 19:55:09 CET 2007 $
+ *  $Revision: 1.1 $
+ *  \author Maarten Thomas
  */
 
 #include "Alignment/LaserAlignment/test/RecoAnalyzer.h"

@@ -1,6 +1,9 @@
-/*
- * Calculate the expected alignment
- * corrections from the applied misalignments
+/** \file ExpectedAlignmentCorrectionsCalculator.cc
+ *  Calculate the expected alignment corrections from the applied misalignments
+ *
+ *  $Date: Sun Mar 18 19:48:33 CET 2007 $
+ *  $Revision: 1.1 $
+ *  \author Maarten Thomas
  */
 
 #include "Alignment/LaserAlignment/test/ExpectedAlignmentCorrectionsCalculator.h"
