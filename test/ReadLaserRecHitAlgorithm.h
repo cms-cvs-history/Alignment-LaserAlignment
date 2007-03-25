@@ -4,8 +4,8 @@
 /** \class ReadLaserRecHitAlgorithm
  *  Algorithm to read RecHits from the LaserBeams
  *
- *  $Date: Sun Mar 18 19:51:27 CET 2007 $
- *  $Revision: 1.1 $
+ *  $Date: 2007/03/18 19:00:21 $
+ *  $Revision: 1.4 $
  *  \author Maarten Thomas
  */
 
@@ -46,8 +46,8 @@ class ReadLaserRecHitAlgorithm
 {
  public:
   /// constructor
-  ReadLaserRecHit	Algorithm(const edm::ParameterSet& conf);
-	/// destructor
+  ReadLaserRecHitAlgorithm(const edm::ParameterSet& conf);
+  /// destructor
   ~ReadLaserRecHitAlgorithm();
   
 
