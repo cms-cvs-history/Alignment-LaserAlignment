@@ -28,7 +28,7 @@ module LaserAlignmentShiftsAndRotations = LaserAlignment
     
     # configuration of the BeamProfileFitter
     include "Alignment/LaserAlignment/data/BeamProfileFitter.cff"
-	untracked bool UseBeamSplitterFrame = true;
+    untracked bool UseBeamSplitterFrame = true
     
     # configuration of the AlignmentAlgorithm
     include "Alignment/LaserAlignment/data/LaserAlignmentAlgorithm.cff"

@@ -31,7 +31,7 @@ module LaserAlignmentOnlyRotations = LaserAlignment
     
     # configuration of the AlignmentAlgorithm
     include "Alignment/LaserAlignment/data/LaserAlignmentAlgorithm.cff"
-	untracked bool UseBeamSplitterFrame = true;
+    untracked bool UseBeamSplitterFrame = true
     
     # list of digi producers
     VPSet DigiProducersList = 
