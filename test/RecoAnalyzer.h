@@ -4,8 +4,8 @@
 /** \class RecoAnalyzer
  *  Analyzer program to make some plots for the reconstruction
  *
- *  $Date: Sun Mar 18 19:52:56 CET 2007 $
- *  $Revision: 1.1 $
+ *  $Date: 2007/03/18 19:00:21 $
+ *  $Revision: 1.3 $
  *  \author Maarten Thomas
  */
 
@@ -45,6 +45,8 @@
 
 #include "DataFormats/TrackCandidate/interface/TrackCandidateCollection.h"
 #include "DataFormats/TrackCandidate/interface/TrackCandidate.h"
+#include "DataFormats/TrackReco/interface/Track.h"
+#include "DataFormats/TrackReco/interface/TrackFwd.h"
 
 // ROOT
 #include "TH1.h"
