@@ -1,0 +1,20 @@
+# use event sample containing laser tracks
+#
+source = PoolSource 
+{ 
+  untracked vstring fileNames = { 
+    "/castor/cern.ch/user/m/mthomas/CMSSW_1_3_1/LaserAlignment/LaserAlignment.0.SIM-DIGI-RECO.root",
+    "/castor/cern.ch/user/m/mthomas/CMSSW_1_3_1/LaserAlignment/LaserAlignment.1.SIM-DIGI-RECO.root",
+    "/castor/cern.ch/user/m/mthomas/CMSSW_1_3_1/LaserAlignment/LaserAlignment.2.SIM-DIGI-RECO.root",
+    "/castor/cern.ch/user/m/mthomas/CMSSW_1_3_1/LaserAlignment/LaserAlignment.3.SIM-DIGI-RECO.root",
+    "/castor/cern.ch/user/m/mthomas/CMSSW_1_3_1/LaserAlignment/LaserAlignment.4.SIM-DIGI-RECO.root",
+    "/castor/cern.ch/user/m/mthomas/CMSSW_1_3_1/LaserAlignment/LaserAlignment.5.SIM-DIGI-RECO.root",
+    "/castor/cern.ch/user/m/mthomas/CMSSW_1_3_1/LaserAlignment/LaserAlignment.6.SIM-DIGI-RECO.root",
+    "/castor/cern.ch/user/m/mthomas/CMSSW_1_3_1/LaserAlignment/LaserAlignment.7.SIM-DIGI-RECO.root",
+    "/castor/cern.ch/user/m/mthomas/CMSSW_1_3_1/LaserAlignment/LaserAlignment.8.SIM-DIGI-RECO.root",
+    "/castor/cern.ch/user/m/mthomas/CMSSW_1_3_1/LaserAlignment/LaserAlignment.9.SIM-DIGI-RECO.root"
+  }
+  untracked uint32 debugVerbosity = 10
+  untracked bool   debugFlag     = true
+}
+untracked PSet maxEvents = {untracked int32 input = -1}
