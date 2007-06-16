@@ -1,8 +1,8 @@
 /** \file RecoAnalyzerInitHistograms.cc
  *  Init histograms for the RecoAnalyzer
  *
- *  $Date: Sun Mar 18 19:55:23 CET 2007 $
- *  $Revision: 1.1 $
+ *  $Date: 2007/03/18 19:00:21 $
+ *  $Revision: 1.2 $
  *  \author Maarten Thomas
  */
 
@@ -1178,4 +1178,137 @@ void RecoAnalyzer::initHistograms()
   theRecHitPositionsRvsZ->SetDirectory(RecHitDir);
   theRecHitPositionsRvsZ->Sumw2();
   // }}}
+  
+  // RecHits for Beams
+  thePosTECR4Beam0 = new TH2D("Beam0","RecHits of Beam 0 in Ring 4 in TEC+", 100, 0.0, 100.0, 200, 100.0, 300.0);
+  thePosTECR4Beam0->SetDirectory(Ring4Beam0PosDir);
+  thePosTECR4Beam0->GetXaxis()->SetTitle("z [cm]");
+  thePosTECR4Beam0->GetYaxis()->SetTitle("R [cm]");
+  thePosTECR4Beam1 = new TH2D("Beam1","RecHits of Beam 1 in Ring 4 in TEC+", 100, 0.0, 100.0, 200, 100.0, 300.0);
+  thePosTECR4Beam1->SetDirectory(Ring4Beam1PosDir);
+  thePosTECR4Beam1->GetXaxis()->SetTitle("z [cm]");
+  thePosTECR4Beam1->GetYaxis()->SetTitle("R [cm]");
+  thePosTECR4Beam2 = new TH2D("Beam2","RecHits of Beam 2 in Ring 4 in TEC+", 100, 0.0, 100.0, 200, 100.0, 300.0);
+  thePosTECR4Beam2->SetDirectory(Ring4Beam2PosDir);
+  thePosTECR4Beam2->GetXaxis()->SetTitle("z [cm]");
+  thePosTECR4Beam2->GetYaxis()->SetTitle("R [cm]");
+  thePosTECR4Beam3 = new TH2D("Beam3","RecHits of Beam 3 in Ring 4 in TEC+", 100, 0.0, 100.0, 200, 100.0, 300.0);
+  thePosTECR4Beam3->SetDirectory(Ring4Beam3PosDir);
+  thePosTECR4Beam3->GetXaxis()->SetTitle("z [cm]");
+  thePosTECR4Beam3->GetYaxis()->SetTitle("R [cm]");
+  thePosTECR4Beam4 = new TH2D("Beam4","RecHits of Beam 4 in Ring 4 in TEC+", 100, 0.0, 100.0, 200, 100.0, 300.0);
+  thePosTECR4Beam4->SetDirectory(Ring4Beam4PosDir);
+  thePosTECR4Beam4->GetXaxis()->SetTitle("z [cm]");
+  thePosTECR4Beam4->GetYaxis()->SetTitle("R [cm]");
+  thePosTECR4Beam5 = new TH2D("Beam5","RecHits of Beam 5 in Ring 4 in TEC+", 100, 0.0, 100.0, 200, 100.0, 300.0);
+  thePosTECR4Beam5->SetDirectory(Ring4Beam5PosDir);
+  thePosTECR4Beam5->GetXaxis()->SetTitle("z [cm]");
+  thePosTECR4Beam5->GetYaxis()->SetTitle("R [cm]");
+  thePosTECR4Beam6 = new TH2D("Beam6","RecHits of Beam 6 in Ring 4 in TEC+", 100, 0.0, 100.0, 200, 100.0, 300.0);
+  thePosTECR4Beam6->SetDirectory(Ring4Beam6PosDir);
+  thePosTECR4Beam6->GetXaxis()->SetTitle("z [cm]");
+  thePosTECR4Beam6->GetYaxis()->SetTitle("R [cm]");
+  thePosTECR4Beam7 = new TH2D("Beam7","RecHits of Beam 7 in Ring 4 in TEC+", 100, 0.0, 100.0, 200, 100.0, 300.0);
+  thePosTECR4Beam7->SetDirectory(Ring4Beam7PosDir);
+  thePosTECR4Beam7->GetXaxis()->SetTitle("z [cm]");
+  thePosTECR4Beam7->GetYaxis()->SetTitle("R [cm]");
+
+  thePosTECR6Beam0 = new TH2D("Beam0","RecHits of Beam 0 in Ring 6 in TEC+", 100, 0.0, 100.0, 200, 100.0, 300.0);
+  thePosTECR6Beam0->SetDirectory(Ring6Beam0PosDir);
+  thePosTECR6Beam0->GetXaxis()->SetTitle("z [cm]");
+  thePosTECR6Beam0->GetYaxis()->SetTitle("R [cm]");
+  thePosTECR6Beam1 = new TH2D("Beam1","RecHits of Beam 1 in Ring 6 in TEC+", 100, 0.0, 100.0, 200, 100.0, 300.0);
+  thePosTECR6Beam1->SetDirectory(Ring6Beam1PosDir);
+  thePosTECR6Beam1->GetXaxis()->SetTitle("z [cm]");
+  thePosTECR6Beam1->GetYaxis()->SetTitle("R [cm]");
+  thePosTECR6Beam2 = new TH2D("Beam2","RecHits of Beam 2 in Ring 6 in TEC+", 100, 0.0, 100.0, 200, 100.0, 300.0);
+  thePosTECR6Beam2->SetDirectory(Ring6Beam2PosDir);
+  thePosTECR6Beam2->GetXaxis()->SetTitle("z [cm]");
+  thePosTECR6Beam2->GetYaxis()->SetTitle("R [cm]");
+  thePosTECR6Beam3 = new TH2D("Beam3","RecHits of Beam 3 in Ring 6 in TEC+", 100, 0.0, 100.0, 200, 100.0, 300.0);
+  thePosTECR6Beam3->SetDirectory(Ring6Beam3PosDir);
+  thePosTECR6Beam3->GetXaxis()->SetTitle("z [cm]");
+  thePosTECR6Beam3->GetYaxis()->SetTitle("R [cm]");
+  thePosTECR6Beam4 = new TH2D("Beam4","RecHits of Beam 4 in Ring 6 in TEC+", 100, 0.0, 100.0, 200, 100.0, 300.0);
+  thePosTECR6Beam4->SetDirectory(Ring6Beam4PosDir);
+  thePosTECR6Beam4->GetXaxis()->SetTitle("z [cm]");
+  thePosTECR6Beam4->GetYaxis()->SetTitle("R [cm]");
+  thePosTECR6Beam5 = new TH2D("Beam5","RecHits of Beam 5 in Ring 6 in TEC+", 100, 0.0, 100.0, 200, 100.0, 300.0);
+  thePosTECR6Beam5->SetDirectory(Ring6Beam5PosDir);
+  thePosTECR6Beam5->GetXaxis()->SetTitle("z [cm]");
+  thePosTECR6Beam5->GetYaxis()->SetTitle("R [cm]");
+  thePosTECR6Beam6 = new TH2D("Beam6","RecHits of Beam 6 in Ring 6 in TEC+", 100, 0.0, 100.0, 200, 100.0, 300.0);
+  thePosTECR6Beam6->SetDirectory(Ring6Beam6PosDir);
+  thePosTECR6Beam6->GetXaxis()->SetTitle("z [cm]");
+  thePosTECR6Beam6->GetYaxis()->SetTitle("R [cm]");
+  thePosTECR6Beam7 = new TH2D("Beam7","RecHits of Beam 7 in Ring 6 in TEC+", 100, 0.0, 100.0, 200, 100.0, 300.0);
+  thePosTECR6Beam7->SetDirectory(Ring6Beam7PosDir);
+  thePosTECR6Beam7->GetXaxis()->SetTitle("z [cm]");
+  thePosTECR6Beam7->GetYaxis()->SetTitle("R [cm]");
+  
+  theNegTECR4Beam0 = new TH2D("Beam0","RecHits of Beam 0 in Ring 4 in TEC-", 100, 0.0, 100.0, 200, -100.0, -300.0);
+  theNegTECR4Beam0->SetDirectory(Ring4Beam0NegDir);
+  theNegTECR4Beam0->GetXaxis()->SetTitle("z [cm]");
+  theNegTECR4Beam0->GetYaxis()->SetTitle("R [cm]");
+  theNegTECR4Beam1 = new TH2D("Beam1","RecHits of Beam 1 in Ring 4 in TEC-", 100, 0.0, 100.0, 200, -100.0, -300.0);
+  theNegTECR4Beam1->SetDirectory(Ring4Beam1NegDir);
+  theNegTECR4Beam1->GetXaxis()->SetTitle("z [cm]");
+  theNegTECR4Beam1->GetYaxis()->SetTitle("R [cm]");
+  theNegTECR4Beam2 = new TH2D("Beam2","RecHits of Beam 2 in Ring 4 in TEC-", 100, 0.0, 100.0, 200, -100.0, -300.0);
+  theNegTECR4Beam2->SetDirectory(Ring4Beam2NegDir);
+  theNegTECR4Beam2->GetXaxis()->SetTitle("z [cm]");
+  theNegTECR4Beam2->GetYaxis()->SetTitle("R [cm]");
+  theNegTECR4Beam3 = new TH2D("Beam3","RecHits of Beam 3 in Ring 4 in TEC-", 100, 0.0, 100.0, 200, -100.0, -300.0);
+  theNegTECR4Beam3->SetDirectory(Ring4Beam3NegDir);
+  theNegTECR4Beam3->GetXaxis()->SetTitle("z [cm]");
+  theNegTECR4Beam3->GetYaxis()->SetTitle("R [cm]");
+  theNegTECR4Beam4 = new TH2D("Beam4","RecHits of Beam 4 in Ring 4 in TEC-", 100, 0.0, 100.0, 200, -100.0, -300.0);
+  theNegTECR4Beam4->SetDirectory(Ring4Beam4NegDir);
+  theNegTECR4Beam4->GetXaxis()->SetTitle("z [cm]");
+  theNegTECR4Beam4->GetYaxis()->SetTitle("R [cm]");
+  theNegTECR4Beam5 = new TH2D("Beam5","RecHits of Beam 5 in Ring 4 in TEC-", 100, 0.0, 100.0, 200, -100.0, -300.0);
+  theNegTECR4Beam5->SetDirectory(Ring4Beam5NegDir);
+  theNegTECR4Beam5->GetXaxis()->SetTitle("z [cm]");
+  theNegTECR4Beam5->GetYaxis()->SetTitle("R [cm]");
+  theNegTECR4Beam6 = new TH2D("Beam6","RecHits of Beam 6 in Ring 4 in TEC-", 100, 0.0, 100.0, 200, -100.0, -300.0);
+  theNegTECR4Beam6->SetDirectory(Ring4Beam6NegDir);
+  theNegTECR4Beam6->GetXaxis()->SetTitle("z [cm]");
+  theNegTECR4Beam6->GetYaxis()->SetTitle("R [cm]");
+  theNegTECR4Beam7 = new TH2D("Beam7","RecHits of Beam 7 in Ring 4 in TEC-", 100, 0.0, 100.0, 200, -100.0, -300.0);
+  theNegTECR4Beam7->SetDirectory(Ring4Beam7NegDir);
+  theNegTECR4Beam7->GetXaxis()->SetTitle("z [cm]");
+  theNegTECR4Beam7->GetYaxis()->SetTitle("R [cm]");
+     
+  theNegTECR6Beam0 = new TH2D("Beam0","RecHits of Beam 0 in Ring 6 in TEC-", 100, 0.0, 100.0, 200, -100.0, -300.0);
+  theNegTECR6Beam0->SetDirectory(Ring6Beam0NegDir);
+  theNegTECR6Beam0->GetXaxis()->SetTitle("z [cm]");
+  theNegTECR6Beam0->GetYaxis()->SetTitle("R [cm]");
+  theNegTECR6Beam1 = new TH2D("Beam1","RecHits of Beam 1 in Ring 6 in TEC-", 100, 0.0, 100.0, 200, -100.0, -300.0);
+  theNegTECR6Beam1->SetDirectory(Ring6Beam1NegDir);
+  theNegTECR6Beam1->GetXaxis()->SetTitle("z [cm]");
+  theNegTECR6Beam1->GetYaxis()->SetTitle("R [cm]");
+  theNegTECR6Beam2 = new TH2D("Beam2","RecHits of Beam 2 in Ring 6 in TEC-", 100, 0.0, 100.0, 200, -100.0, -300.0);
+  theNegTECR6Beam2->SetDirectory(Ring6Beam2NegDir);
+  theNegTECR6Beam2->GetXaxis()->SetTitle("z [cm]");
+  theNegTECR6Beam2->GetYaxis()->SetTitle("R [cm]");
+  theNegTECR6Beam3 = new TH2D("Beam3","RecHits of Beam 3 in Ring 6 in TEC-", 100, 0.0, 100.0, 200, -100.0, -300.0);
+  theNegTECR6Beam3->SetDirectory(Ring6Beam3NegDir);
+  theNegTECR6Beam3->GetXaxis()->SetTitle("z [cm]");
+  theNegTECR6Beam3->GetYaxis()->SetTitle("R [cm]");
+  theNegTECR6Beam4 = new TH2D("Beam4","RecHits of Beam 4 in Ring 6 in TEC-", 100, 0.0, 100.0, 200, -100.0, -300.0);
+  theNegTECR6Beam4->SetDirectory(Ring6Beam4NegDir);
+  theNegTECR6Beam4->GetXaxis()->SetTitle("z [cm]");
+  theNegTECR6Beam4->GetYaxis()->SetTitle("R [cm]");
+  theNegTECR6Beam5 = new TH2D("Beam5","RecHits of Beam 5 in Ring 6 in TEC-", 100, 0.0, 100.0, 200, -100.0, -300.0);
+  theNegTECR6Beam5->SetDirectory(Ring6Beam5NegDir);
+  theNegTECR6Beam5->GetXaxis()->SetTitle("z [cm]");
+  theNegTECR6Beam5->GetYaxis()->SetTitle("R [cm]");
+  theNegTECR6Beam6 = new TH2D("Beam6","RecHits of Beam 6 in Ring 6 in TEC-", 100, 0.0, 100.0, 200, -100.0, -300.0);
+  theNegTECR6Beam6->SetDirectory(Ring6Beam6NegDir);
+  theNegTECR6Beam6->GetXaxis()->SetTitle("z [cm]");
+  theNegTECR6Beam6->GetYaxis()->SetTitle("R [cm]");
+  theNegTECR6Beam7 = new TH2D("Beam7","RecHits of Beam 7 in Ring 6 in TEC-", 100, 0.0, 100.0, 200, -100.0, -300.0);
+  theNegTECR6Beam7->SetDirectory(Ring6Beam7NegDir);
+  theNegTECR6Beam7->GetXaxis()->SetTitle("z [cm]");
+  theNegTECR6Beam7->GetYaxis()->SetTitle("R [cm]");
 }

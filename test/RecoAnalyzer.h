@@ -4,8 +4,8 @@
 /** \class RecoAnalyzer
  *  Analyzer program to make some plots for the reconstruction
  *
- *  $Date: 2007/03/18 19:00:21 $
- *  $Revision: 1.3 $
+ *  $Date: 2007/05/14 07:39:33 $
+ *  $Revision: 1.4 $
  *  \author Maarten Thomas
  */
 
@@ -90,6 +90,8 @@ class RecoAnalyzer : public edm::EDAnalyzer, public TObject
   void trackerRecHits(edm::Event const& theEvent, edm::EventSetup const& theSetup);
 	/// print some information about the TrackCandidates
   void trackerTC(edm::Event const& theEvent, edm::EventSetup const& theSetup);
+  /// fill rec hits for each beam into a histogram
+  void RecoAnalyzer::fillLaserBeamPlots(double r_, double z_, std::string thePart, int theRing, int theBeam);
   
  private:
   double theSearchPhiTIB;
@@ -678,5 +680,41 @@ class RecoAnalyzer : public edm::EDAnalyzer, public TObject
   TH2D * theRecHitPositionsYvsX;
   TH2D * theRecHitPositionsPhivsZ;
   TH2D * theRecHitPositionsRvsZ;
+  
+  // RecHits in TEC+
+  TH1D * thePosTECR4Beam0RecHits;
+  TH1D * thePosTECR4Beam1RecHits;
+  TH1D * thePosTECR4Beam2RecHits;
+  TH1D * thePosTECR4Beam3RecHits;
+  TH1D * thePosTECR4Beam4RecHits;
+  TH1D * thePosTECR4Beam5RecHits;
+  TH1D * thePosTECR4Beam6RecHits;
+  TH1D * thePosTECR4Beam7RecHits;
+  TH1D * thePosTECR6Beam0RecHits;
+  TH1D * thePosTECR6Beam1RecHits;
+  TH1D * thePosTECR6Beam2RecHits;
+  TH1D * thePosTECR6Beam3RecHits;
+  TH1D * thePosTECR6Beam4RecHits;
+  TH1D * thePosTECR6Beam5RecHits;
+  TH1D * thePosTECR6Beam6RecHits;
+  TH1D * thePosTECR6Beam7RecHits;
+  
+  TH1D * theNegTECR4Beam0RecHits;
+  TH1D * theNegTECR4Beam1RecHits;
+  TH1D * theNegTECR4Beam2RecHits;
+  TH1D * theNegTECR4Beam3RecHits;
+  TH1D * theNegTECR4Beam4RecHits;
+  TH1D * theNegTECR4Beam5RecHits;
+  TH1D * theNegTECR4Beam6RecHits;
+  TH1D * theNegTECR4Beam7RecHits;
+  TH1D * theNegTECR6Beam0RecHits;
+  TH1D * theNegTECR6Beam1RecHits;
+  TH1D * theNegTECR6Beam2RecHits;
+  TH1D * theNegTECR6Beam3RecHits;
+  TH1D * theNegTECR6Beam4RecHits;
+  TH1D * theNegTECR6Beam5RecHits;
+  TH1D * theNegTECR6Beam6RecHits;
+  TH1D * theNegTECR6Beam7RecHits;
+  
 };
 #endif
