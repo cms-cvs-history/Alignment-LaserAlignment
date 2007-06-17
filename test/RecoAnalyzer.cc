@@ -1,8 +1,8 @@
 /** \file RecoAnalyzer.cc
 *  Analyzer program for Reco results
   *
-  *  $Date: 2007/03/18 19:00:21 $
-  *  $Revision: 1.2 $
+  *  $Date: 2007/06/16 13:17:42 $
+  *  $Revision: 1.3 $
   *  \author Maarten Thomas
  */
 
@@ -100,7 +100,7 @@ void RecoAnalyzer::fillAdcCounts(TH1D * theHistogram,
   }
 }
 
-void RecoAnalyzer::fillLaserBeamPlots(double r_, double z_, std::string thePart, int theRing, int theBeam);
+void RecoAnalyzer::fillLaserBeamPlots(double r_, double z_, std::string thePart, int theRing, int theBeam)
 {
   if ( (thePart == "TEC+") && (theRing == 4) && (theBeam == 0) )
   {
