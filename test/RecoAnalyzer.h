@@ -4,8 +4,8 @@
 /** \class RecoAnalyzer
  *  Analyzer program to make some plots for the reconstruction
  *
- *  $Date: 2007/06/17 12:57:32 $
- *  $Revision: 1.7 $
+ *  $Date: 2007/06/17 13:17:28 $
+ *  $Revision: 1.8 $
  *  \author Maarten Thomas
  */
 
@@ -718,6 +718,5 @@ class RecoAnalyzer : public edm::EDAnalyzer, public TObject
   
 };
 #endif
-#ifndef LaserAlignment_RecoAnalyzer_H
-#define LaserAlignment_RecoAnalyzer_H
+
 
