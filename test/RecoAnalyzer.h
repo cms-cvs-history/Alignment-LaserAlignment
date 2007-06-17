@@ -4,8 +4,8 @@
 /** \class RecoAnalyzer
  *  Analyzer program to make some plots for the reconstruction
  *
- *  $Date: 2007/06/16 13:17:42 $
- *  $Revision: 1.5 $
+ *  $Date: 2007/06/17 12:34:21 $
+ *  $Revision: 1.6 $
  *  \author Maarten Thomas
  */
 
@@ -724,8 +724,8 @@ class RecoAnalyzer : public edm::EDAnalyzer, public TObject
 /** \class RecoAnalyzer
  *  Analyzer program to make some plots for the reconstruction
  *
- *  $Date: 2007/06/16 13:17:42 $
- *  $Revision: 1.5 $
+ *  $Date: 2007/06/17 12:34:21 $
+ *  $Revision: 1.6 $
  *  \author Maarten Thomas
  */
 
@@ -1444,8 +1444,8 @@ class RecoAnalyzer : public edm::EDAnalyzer, public TObject
 /** \class RecoAnalyzer
  *  Analyzer program to make some plots for the reconstruction
  *
- *  $Date: 2007/06/16 13:17:42 $
- *  $Revision: 1.5 $
+ *  $Date: 2007/06/17 12:34:21 $
+ *  $Revision: 1.6 $
  *  \author Maarten Thomas
  */
 
@@ -2164,8 +2164,8 @@ class RecoAnalyzer : public edm::EDAnalyzer, public TObject
 /** \class RecoAnalyzer
  *  Analyzer program to make some plots for the reconstruction
  *
- *  $Date: 2007/06/16 13:17:42 $
- *  $Revision: 1.5 $
+ *  $Date: 2007/06/17 12:34:21 $
+ *  $Revision: 1.6 $
  *  \author Maarten Thomas
  */
 
@@ -2884,8 +2884,8 @@ class RecoAnalyzer : public edm::EDAnalyzer, public TObject
 /** \class RecoAnalyzer
  *  Analyzer program to make some plots for the reconstruction
  *
- *  $Date: 2007/06/16 13:17:42 $
- *  $Revision: 1.5 $
+ *  $Date: 2007/06/17 12:34:21 $
+ *  $Revision: 1.6 $
  *  \author Maarten Thomas
  */
 
@@ -3604,8 +3604,8 @@ class RecoAnalyzer : public edm::EDAnalyzer, public TObject
 /** \class RecoAnalyzer
  *  Analyzer program to make some plots for the reconstruction
  *
- *  $Date: 2007/06/16 13:17:42 $
- *  $Revision: 1.5 $
+ *  $Date: 2007/06/17 12:34:21 $
+ *  $Revision: 1.6 $
  *  \author Maarten Thomas
  */
 
@@ -4324,8 +4324,8 @@ class RecoAnalyzer : public edm::EDAnalyzer, public TObject
 /** \class RecoAnalyzer
  *  Analyzer program to make some plots for the reconstruction
  *
- *  $Date: 2007/06/16 13:17:42 $
- *  $Revision: 1.5 $
+ *  $Date: 2007/06/17 12:34:21 $
+ *  $Revision: 1.6 $
  *  \author Maarten Thomas
  */
 
@@ -5044,8 +5044,8 @@ class RecoAnalyzer : public edm::EDAnalyzer, public TObject
 /** \class RecoAnalyzer
  *  Analyzer program to make some plots for the reconstruction
  *
- *  $Date: 2007/06/16 13:17:42 $
- *  $Revision: 1.5 $
+ *  $Date: 2007/06/17 12:34:21 $
+ *  $Revision: 1.6 $
  *  \author Maarten Thomas
  */
 
@@ -5764,8 +5764,8 @@ class RecoAnalyzer : public edm::EDAnalyzer, public TObject
 /** \class RecoAnalyzer
  *  Analyzer program to make some plots for the reconstruction
  *
- *  $Date: 2007/06/16 13:17:42 $
- *  $Revision: 1.5 $
+ *  $Date: 2007/06/17 12:34:21 $
+ *  $Revision: 1.6 $
  *  \author Maarten Thomas
  */
 
@@ -6484,8 +6484,8 @@ class RecoAnalyzer : public edm::EDAnalyzer, public TObject
 /** \class RecoAnalyzer
  *  Analyzer program to make some plots for the reconstruction
  *
- *  $Date: 2007/06/16 13:17:42 $
- *  $Revision: 1.5 $
+ *  $Date: 2007/06/17 12:34:21 $
+ *  $Revision: 1.6 $
  *  \author Maarten Thomas
  */
 
@@ -7204,8 +7204,8 @@ class RecoAnalyzer : public edm::EDAnalyzer, public TObject
 /** \class RecoAnalyzer
  *  Analyzer program to make some plots for the reconstruction
  *
- *  $Date: 2007/06/16 13:17:42 $
- *  $Revision: 1.5 $
+ *  $Date: 2007/06/17 12:34:21 $
+ *  $Revision: 1.6 $
  *  \author Maarten Thomas
  */
 
@@ -7924,8 +7924,8 @@ class RecoAnalyzer : public edm::EDAnalyzer, public TObject
 /** \class RecoAnalyzer
  *  Analyzer program to make some plots for the reconstruction
  *
- *  $Date: 2007/06/16 13:17:42 $
- *  $Revision: 1.5 $
+ *  $Date: 2007/06/17 12:34:21 $
+ *  $Revision: 1.6 $
  *  \author Maarten Thomas
  */
 
@@ -8644,8 +8644,8 @@ class RecoAnalyzer : public edm::EDAnalyzer, public TObject
 /** \class RecoAnalyzer
  *  Analyzer program to make some plots for the reconstruction
  *
- *  $Date: 2007/06/16 13:17:42 $
- *  $Revision: 1.5 $
+ *  $Date: 2007/06/17 12:34:21 $
+ *  $Revision: 1.6 $
  *  \author Maarten Thomas
  */
 
@@ -9364,8 +9364,8 @@ class RecoAnalyzer : public edm::EDAnalyzer, public TObject
 /** \class RecoAnalyzer
  *  Analyzer program to make some plots for the reconstruction
  *
- *  $Date: 2007/06/16 13:17:42 $
- *  $Revision: 1.5 $
+ *  $Date: 2007/06/17 12:34:21 $
+ *  $Revision: 1.6 $
  *  \author Maarten Thomas
  */
 
@@ -10084,8 +10084,8 @@ class RecoAnalyzer : public edm::EDAnalyzer, public TObject
 /** \class RecoAnalyzer
  *  Analyzer program to make some plots for the reconstruction
  *
- *  $Date: 2007/06/16 13:17:42 $
- *  $Revision: 1.5 $
+ *  $Date: 2007/06/17 12:34:21 $
+ *  $Revision: 1.6 $
  *  \author Maarten Thomas
  */
 
@@ -10804,8 +10804,8 @@ class RecoAnalyzer : public edm::EDAnalyzer, public TObject
 /** \class RecoAnalyzer
  *  Analyzer program to make some plots for the reconstruction
  *
- *  $Date: 2007/06/16 13:17:42 $
- *  $Revision: 1.5 $
+ *  $Date: 2007/06/17 12:34:21 $
+ *  $Revision: 1.6 $
  *  \author Maarten Thomas
  */
 
@@ -11482,39 +11482,39 @@ class RecoAnalyzer : public edm::EDAnalyzer, public TObject
   TH2D * theRecHitPositionsRvsZ;
   
   // RecHits in TEC+
-  TH1D * thePosTECR4Beam0RecHits;
-  TH1D * thePosTECR4Beam1RecHits;
-  TH1D * thePosTECR4Beam2RecHits;
-  TH1D * thePosTECR4Beam3RecHits;
-  TH1D * thePosTECR4Beam4RecHits;
-  TH1D * thePosTECR4Beam5RecHits;
-  TH1D * thePosTECR4Beam6RecHits;
-  TH1D * thePosTECR4Beam7RecHits;
-  TH1D * thePosTECR6Beam0RecHits;
-  TH1D * thePosTECR6Beam1RecHits;
-  TH1D * thePosTECR6Beam2RecHits;
-  TH1D * thePosTECR6Beam3RecHits;
-  TH1D * thePosTECR6Beam4RecHits;
-  TH1D * thePosTECR6Beam5RecHits;
-  TH1D * thePosTECR6Beam6RecHits;
-  TH1D * thePosTECR6Beam7RecHits;
+  TH2D * thePosTECR4Beam0RecHits;
+  TH2D * thePosTECR4Beam1RecHits;
+  TH2D * thePosTECR4Beam2RecHits;
+  TH2D * thePosTECR4Beam3RecHits;
+  TH2D * thePosTECR4Beam4RecHits;
+  TH2D * thePosTECR4Beam5RecHits;
+  TH2D * thePosTECR4Beam6RecHits;
+  TH2D * thePosTECR4Beam7RecHits;
+  TH2D * thePosTECR6Beam0RecHits;
+  TH2D * thePosTECR6Beam1RecHits;
+  TH2D * thePosTECR6Beam2RecHits;
+  TH2D * thePosTECR6Beam3RecHits;
+  TH2D * thePosTECR6Beam4RecHits;
+  TH2D * thePosTECR6Beam5RecHits;
+  TH2D * thePosTECR6Beam6RecHits;
+  TH2D * thePosTECR6Beam7RecHits;
   
-  TH1D * theNegTECR4Beam0RecHits;
-  TH1D * theNegTECR4Beam1RecHits;
-  TH1D * theNegTECR4Beam2RecHits;
-  TH1D * theNegTECR4Beam3RecHits;
-  TH1D * theNegTECR4Beam4RecHits;
-  TH1D * theNegTECR4Beam5RecHits;
-  TH1D * theNegTECR4Beam6RecHits;
-  TH1D * theNegTECR4Beam7RecHits;
-  TH1D * theNegTECR6Beam0RecHits;
-  TH1D * theNegTECR6Beam1RecHits;
-  TH1D * theNegTECR6Beam2RecHits;
-  TH1D * theNegTECR6Beam3RecHits;
-  TH1D * theNegTECR6Beam4RecHits;
-  TH1D * theNegTECR6Beam5RecHits;
-  TH1D * theNegTECR6Beam6RecHits;
-  TH1D * theNegTECR6Beam7RecHits;
+  TH2D * theNegTECR4Beam0RecHits;
+  TH2D * theNegTECR4Beam1RecHits;
+  TH2D * theNegTECR4Beam2RecHits;
+  TH2D * theNegTECR4Beam3RecHits;
+  TH2D * theNegTECR4Beam4RecHits;
+  TH2D * theNegTECR4Beam5RecHits;
+  TH2D * theNegTECR4Beam6RecHits;
+  TH2D * theNegTECR4Beam7RecHits;
+  TH2D * theNegTECR6Beam0RecHits;
+  TH2D * theNegTECR6Beam1RecHits;
+  TH2D * theNegTECR6Beam2RecHits;
+  TH2D * theNegTECR6Beam3RecHits;
+  TH2D * theNegTECR6Beam4RecHits;
+  TH2D * theNegTECR6Beam5RecHits;
+  TH2D * theNegTECR6Beam6RecHits;
+  TH2D * theNegTECR6Beam7RecHits;
   
 };
 #endif
