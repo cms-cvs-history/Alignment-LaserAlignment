@@ -4,8 +4,8 @@
 /** \class RecoAnalyzer
  *  Analyzer program to make some plots for the reconstruction
  *
- *  $Date: 2007/06/17 13:24:18 $
- *  $Revision: 1.9 $
+ *  $Date: 2007/06/18 08:57:41 $
+ *  $Revision: 1.10 $
  *  \author Maarten Thomas
  */
 
@@ -91,7 +91,7 @@ class RecoAnalyzer : public edm::EDAnalyzer, public TObject
 	/// print some information about the TrackCandidates
   void trackerTC(edm::Event const& theEvent, edm::EventSetup const& theSetup);
   /// fill rec hits for each beam into a histogram
-  void fillLaserBeamPlots(double r_, double z_, std::string thePart, int theRing, int theBeam);
+  void fillLaserBeamPlots(double r_, int theWheel, std::string thePart, int theRing, int theBeam);
   
  private:
   double theSearchPhiTIB;
