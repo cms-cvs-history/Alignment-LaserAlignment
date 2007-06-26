@@ -8,4 +8,5 @@
     double originHalfLength = 90
     double originZPosition = 0
     string TTRHBuilder = "WithTrackAngle"	
+    string Propagator = "Analytical" # change to WithMaterial if you want to use the PropagatorWithMaterial
 }
