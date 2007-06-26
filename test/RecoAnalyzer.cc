@@ -1,8 +1,8 @@
 /** \file RecoAnalyzer.cc
 *  Analyzer program for Reco results
   *
-  *  $Date: 2007/06/18 09:07:23 $
-  *  $Revision: 1.6 $
+  *  $Date: 2007/06/18 09:13:48 $
+  *  $Revision: 1.7 $
   *  \author Maarten Thomas
  */
 
@@ -139,166 +139,166 @@ void RecoAnalyzer::analyze(edm::Event const& theEvent, edm::EventSetup const& th
   // info about the TrackCandidates
   trackerTC(theEvent, theSetup);
   
-  LogDebug("RecoAnalyzer") << "TEC+ R4 Beam 0 RecHits: " << thePosTECR4Beam0RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC+ R4 Beam 0 RecHits: " << thePosTECR4Beam0RecHits.at(0) << " "
                  << thePosTECR4Beam0RecHits.at(1) << " " << thePosTECR4Beam0RecHits.at(2) << " " 
                  << thePosTECR4Beam0RecHits.at(3) << " " << thePosTECR4Beam0RecHits.at(4) << " "
                  << thePosTECR4Beam0RecHits.at(5) << " " << thePosTECR4Beam0RecHits.at(6) << " "
                  << thePosTECR4Beam0RecHits.at(7) << " " << thePosTECR4Beam0RecHits.at(8);
-  LogDebug("RecoAnalyzer") << "TEC+ R4 Beam 1 RecHits: " << thePosTECR4Beam1RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC+ R4 Beam 1 RecHits: " << thePosTECR4Beam1RecHits.at(0) << " "
                  << thePosTECR4Beam1RecHits.at(1) << " " << thePosTECR4Beam1RecHits.at(2) << " "
                  << thePosTECR4Beam1RecHits.at(3) << " " << thePosTECR4Beam1RecHits.at(4) << " "
                  << thePosTECR4Beam1RecHits.at(5) << " " << thePosTECR4Beam1RecHits.at(6) << " "
                  << thePosTECR4Beam1RecHits.at(7) << " " << thePosTECR4Beam1RecHits.at(8);
-  LogDebug("RecoAnalyzer") << "TEC+ R4 Beam 2 RecHits: " << thePosTECR4Beam2RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC+ R4 Beam 2 RecHits: " << thePosTECR4Beam2RecHits.at(0) << " "
                  << thePosTECR4Beam2RecHits.at(1) << " " << thePosTECR4Beam2RecHits.at(2) << " "
                  << thePosTECR4Beam2RecHits.at(3) << " " << thePosTECR4Beam2RecHits.at(4) << " "
                  << thePosTECR4Beam2RecHits.at(5) << " " << thePosTECR4Beam2RecHits.at(6) << " "
                  << thePosTECR4Beam2RecHits.at(7) << " " << thePosTECR4Beam2RecHits.at(8);
-  LogDebug("RecoAnalyzer") << "TEC+ R4 Beam 3 RecHits: " << thePosTECR4Beam3RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC+ R4 Beam 3 RecHits: " << thePosTECR4Beam3RecHits.at(0) << " "
                  << thePosTECR4Beam3RecHits.at(1) << " " << thePosTECR4Beam3RecHits.at(2) << " "
                  << thePosTECR4Beam3RecHits.at(3) << " " << thePosTECR4Beam3RecHits.at(4) << " "
                  << thePosTECR4Beam3RecHits.at(5) << " " << thePosTECR4Beam3RecHits.at(6) << " "
                  << thePosTECR4Beam3RecHits.at(7) << " " << thePosTECR4Beam3RecHits.at(8);
-  LogDebug("RecoAnalyzer") << "TEC+ R4 Beam 4 RecHits: " << thePosTECR4Beam4RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC+ R4 Beam 4 RecHits: " << thePosTECR4Beam4RecHits.at(0) << " "
                  << thePosTECR4Beam4RecHits.at(1) << " " << thePosTECR4Beam4RecHits.at(2) << " "
                  << thePosTECR4Beam4RecHits.at(3) << " " << thePosTECR4Beam4RecHits.at(4) << " "
                  << thePosTECR4Beam4RecHits.at(5) << " " << thePosTECR4Beam4RecHits.at(6) << " "
                  << thePosTECR4Beam4RecHits.at(7) << " " << thePosTECR4Beam4RecHits.at(8);
-  LogDebug("RecoAnalyzer") << "TEC+ R4 Beam 5 RecHits: " << thePosTECR4Beam5RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC+ R4 Beam 5 RecHits: " << thePosTECR4Beam5RecHits.at(0) << " "
                  << thePosTECR4Beam5RecHits.at(1) << " " << thePosTECR4Beam5RecHits.at(2) << " "
                  << thePosTECR4Beam5RecHits.at(3) << " " << thePosTECR4Beam5RecHits.at(4) << " "
                  << thePosTECR4Beam5RecHits.at(5) << " " << thePosTECR4Beam5RecHits.at(6) << " "
                  << thePosTECR4Beam5RecHits.at(7) << " " << thePosTECR4Beam5RecHits.at(8);
-  LogDebug("RecoAnalyzer") << "TEC+ R4 Beam 6 RecHits: " << thePosTECR4Beam6RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC+ R4 Beam 6 RecHits: " << thePosTECR4Beam6RecHits.at(0) << " "
                  << thePosTECR4Beam6RecHits.at(1) << " " << thePosTECR4Beam6RecHits.at(2) << " "
                  << thePosTECR4Beam6RecHits.at(3) << " " << thePosTECR4Beam6RecHits.at(4) << " "
                  << thePosTECR4Beam6RecHits.at(5) << " " << thePosTECR4Beam6RecHits.at(6) << " "
                  << thePosTECR4Beam6RecHits.at(7) << " " << thePosTECR4Beam6RecHits.at(8);
-  LogDebug("RecoAnalyzer") << "TEC+ R4 Beam 7 RecHits: " << thePosTECR4Beam7RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC+ R4 Beam 7 RecHits: " << thePosTECR4Beam7RecHits.at(0) << " "
                  << thePosTECR4Beam7RecHits.at(1) << " " << thePosTECR4Beam7RecHits.at(2) << " "
                  << thePosTECR4Beam7RecHits.at(3) << " " << thePosTECR4Beam7RecHits.at(4) << " "
                  << thePosTECR4Beam7RecHits.at(5) << " " << thePosTECR4Beam7RecHits.at(6) << " "
                  << thePosTECR4Beam7RecHits.at(7) << " " << thePosTECR4Beam7RecHits.at(8);
 
-  LogDebug("RecoAnalyzer") << "TEC+ R6 Beam 0 RecHits: " << thePosTECR6Beam0RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC+ R6 Beam 0 RecHits: " << thePosTECR6Beam0RecHits.at(0) << " "
                  << thePosTECR6Beam0RecHits.at(1) << " " << thePosTECR6Beam0RecHits.at(2) << " " 
                  << thePosTECR6Beam0RecHits.at(3) << " " << thePosTECR6Beam0RecHits.at(4) << " "
                  << thePosTECR6Beam0RecHits.at(5) << " " << thePosTECR6Beam0RecHits.at(6) << " "
                  << thePosTECR6Beam0RecHits.at(7) << " " << thePosTECR6Beam0RecHits.at(8);
-  LogDebug("RecoAnalyzer") << "TEC+ R6 Beam 1 RecHits: " << thePosTECR6Beam1RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC+ R6 Beam 1 RecHits: " << thePosTECR6Beam1RecHits.at(0) << " "
                  << thePosTECR6Beam1RecHits.at(1) << " " << thePosTECR6Beam1RecHits.at(2) << " "
                  << thePosTECR6Beam1RecHits.at(3) << " " << thePosTECR6Beam1RecHits.at(4) << " "
                  << thePosTECR6Beam1RecHits.at(5) << " " << thePosTECR6Beam1RecHits.at(6) << " "
                  << thePosTECR6Beam1RecHits.at(7) << " " << thePosTECR6Beam1RecHits.at(8);
-  LogDebug("RecoAnalyzer") << "TEC+ R6 Beam 2 RecHits: " << thePosTECR6Beam2RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC+ R6 Beam 2 RecHits: " << thePosTECR6Beam2RecHits.at(0) << " "
                  << thePosTECR6Beam2RecHits.at(1) << " " << thePosTECR6Beam2RecHits.at(2) << " "
                  << thePosTECR6Beam2RecHits.at(3) << " " << thePosTECR6Beam2RecHits.at(4) << " "
                  << thePosTECR6Beam2RecHits.at(5) << " " << thePosTECR6Beam2RecHits.at(6) << " "
                  << thePosTECR6Beam2RecHits.at(7) << " " << thePosTECR6Beam2RecHits.at(8);
-  LogDebug("RecoAnalyzer") << "TEC+ R6 Beam 3 RecHits: " << thePosTECR6Beam3RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC+ R6 Beam 3 RecHits: " << thePosTECR6Beam3RecHits.at(0) << " "
                  << thePosTECR6Beam3RecHits.at(1) << " " << thePosTECR6Beam3RecHits.at(2) << " "
                  << thePosTECR6Beam3RecHits.at(3) << " " << thePosTECR6Beam3RecHits.at(4) << " "
                  << thePosTECR6Beam3RecHits.at(5) << " " << thePosTECR6Beam3RecHits.at(6) << " "
                  << thePosTECR6Beam3RecHits.at(7) << " " << thePosTECR6Beam3RecHits.at(8);
-  LogDebug("RecoAnalyzer") << "TEC+ R6 Beam 4 RecHits: " << thePosTECR6Beam4RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC+ R6 Beam 4 RecHits: " << thePosTECR6Beam4RecHits.at(0) << " "
                  << thePosTECR6Beam4RecHits.at(1) << " " << thePosTECR6Beam4RecHits.at(2) << " "
                  << thePosTECR6Beam4RecHits.at(3) << " " << thePosTECR6Beam4RecHits.at(4) << " "
                  << thePosTECR6Beam4RecHits.at(5) << " " << thePosTECR6Beam4RecHits.at(6) << " "
                  << thePosTECR6Beam4RecHits.at(7) << " " << thePosTECR6Beam4RecHits.at(8);
-  LogDebug("RecoAnalyzer") << "TEC+ R6 Beam 5 RecHits: " << thePosTECR6Beam5RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC+ R6 Beam 5 RecHits: " << thePosTECR6Beam5RecHits.at(0) << " "
                  << thePosTECR6Beam5RecHits.at(1) << " " << thePosTECR6Beam5RecHits.at(2) << " "
                  << thePosTECR6Beam5RecHits.at(3) << " " << thePosTECR6Beam5RecHits.at(4) << " "
                  << thePosTECR6Beam5RecHits.at(5) << " " << thePosTECR6Beam5RecHits.at(6) << " "
                  << thePosTECR6Beam5RecHits.at(7) << " " << thePosTECR6Beam5RecHits.at(8);
-  LogDebug("RecoAnalyzer") << "TEC+ R6 Beam 6 RecHits: " << thePosTECR6Beam6RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC+ R6 Beam 6 RecHits: " << thePosTECR6Beam6RecHits.at(0) << " "
                  << thePosTECR6Beam6RecHits.at(1) << " " << thePosTECR6Beam6RecHits.at(2) << " "
                  << thePosTECR6Beam6RecHits.at(3) << " " << thePosTECR6Beam6RecHits.at(4) << " "
                  << thePosTECR6Beam6RecHits.at(5) << " " << thePosTECR6Beam6RecHits.at(6) << " "
                  << thePosTECR6Beam6RecHits.at(7) << " " << thePosTECR6Beam6RecHits.at(8);
-  LogDebug("RecoAnalyzer") << "TEC+ R6 Beam 7 RecHits: " << thePosTECR6Beam7RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC+ R6 Beam 7 RecHits: " << thePosTECR6Beam7RecHits.at(0) << " "
                  << thePosTECR6Beam7RecHits.at(1) << " " << thePosTECR6Beam7RecHits.at(2) << " "
                  << thePosTECR6Beam7RecHits.at(3) << " " << thePosTECR6Beam7RecHits.at(4) << " "
                  << thePosTECR6Beam7RecHits.at(5) << " " << thePosTECR6Beam7RecHits.at(6) << " "
                  << thePosTECR6Beam7RecHits.at(7) << " " << thePosTECR6Beam7RecHits.at(8);
              
   
-  LogDebug("RecoAnalyzer") << "TEC- R4 Beam 0 RecHits: " << theNegTECR4Beam0RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC- R4 Beam 0 RecHits: " << theNegTECR4Beam0RecHits.at(0) << " "
                  << theNegTECR4Beam0RecHits.at(1) << " " << theNegTECR4Beam0RecHits.at(2) << " " 
                  << theNegTECR4Beam0RecHits.at(3) << " " << theNegTECR4Beam0RecHits.at(4) << " "
                  << theNegTECR4Beam0RecHits.at(5) << " " << theNegTECR4Beam0RecHits.at(6) << " "
                  << theNegTECR4Beam0RecHits.at(7) << " " << theNegTECR4Beam0RecHits.at(8);
-  LogDebug("RecoAnalyzer") << "TEC- R4 Beam 1 RecHits: " << theNegTECR4Beam1RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC- R4 Beam 1 RecHits: " << theNegTECR4Beam1RecHits.at(0) << " "
                  << theNegTECR4Beam1RecHits.at(1) << " " << theNegTECR4Beam1RecHits.at(2) << " "
                  << theNegTECR4Beam1RecHits.at(3) << " " << theNegTECR4Beam1RecHits.at(4) << " "
                  << theNegTECR4Beam1RecHits.at(5) << " " << theNegTECR4Beam1RecHits.at(6) << " "
                  << theNegTECR4Beam1RecHits.at(7) << " " << theNegTECR4Beam1RecHits.at(8);
-  LogDebug("RecoAnalyzer") << "TEC- R4 Beam 2 RecHits: " << theNegTECR4Beam2RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC- R4 Beam 2 RecHits: " << theNegTECR4Beam2RecHits.at(0) << " "
                  << theNegTECR4Beam2RecHits.at(1) << " " << theNegTECR4Beam2RecHits.at(2) << " "
                  << theNegTECR4Beam2RecHits.at(3) << " " << theNegTECR4Beam2RecHits.at(4) << " "
                  << theNegTECR4Beam2RecHits.at(5) << " " << theNegTECR4Beam2RecHits.at(6) << " "
                  << theNegTECR4Beam2RecHits.at(7) << " " << theNegTECR4Beam2RecHits.at(8);
-  LogDebug("RecoAnalyzer") << "TEC- R4 Beam 3 RecHits: " << theNegTECR4Beam3RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC- R4 Beam 3 RecHits: " << theNegTECR4Beam3RecHits.at(0) << " "
                  << theNegTECR4Beam3RecHits.at(1) << " " << theNegTECR4Beam3RecHits.at(2) << " "
                  << theNegTECR4Beam3RecHits.at(3) << " " << theNegTECR4Beam3RecHits.at(4) << " "
                  << theNegTECR4Beam3RecHits.at(5) << " " << theNegTECR4Beam3RecHits.at(6) << " "
                  << theNegTECR4Beam3RecHits.at(7) << " " << theNegTECR4Beam3RecHits.at(8);
-  LogDebug("RecoAnalyzer") << "TEC- R4 Beam 4 RecHits: " << theNegTECR4Beam4RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC- R4 Beam 4 RecHits: " << theNegTECR4Beam4RecHits.at(0) << " "
                  << theNegTECR4Beam4RecHits.at(1) << " " << theNegTECR4Beam4RecHits.at(2) << " "
                  << theNegTECR4Beam4RecHits.at(3) << " " << theNegTECR4Beam4RecHits.at(4) << " "
                  << theNegTECR4Beam4RecHits.at(5) << " " << theNegTECR4Beam4RecHits.at(6) << " "
                  << theNegTECR4Beam4RecHits.at(7) << " " << theNegTECR4Beam4RecHits.at(8);
-  LogDebug("RecoAnalyzer") << "TEC- R4 Beam 5 RecHits: " << theNegTECR4Beam5RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC- R4 Beam 5 RecHits: " << theNegTECR4Beam5RecHits.at(0) << " "
                  << theNegTECR4Beam5RecHits.at(1) << " " << theNegTECR4Beam5RecHits.at(2) << " "
                  << theNegTECR4Beam5RecHits.at(3) << " " << theNegTECR4Beam5RecHits.at(4) << " "
                  << theNegTECR4Beam5RecHits.at(5) << " " << theNegTECR4Beam5RecHits.at(6) << " "
                  << theNegTECR4Beam5RecHits.at(7) << " " << theNegTECR4Beam5RecHits.at(8);
-  LogDebug("RecoAnalyzer") << "TEC- R4 Beam 6 RecHits: " << theNegTECR4Beam6RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC- R4 Beam 6 RecHits: " << theNegTECR4Beam6RecHits.at(0) << " "
                  << theNegTECR4Beam6RecHits.at(1) << " " << theNegTECR4Beam6RecHits.at(2) << " "
                  << theNegTECR4Beam6RecHits.at(3) << " " << theNegTECR4Beam6RecHits.at(4) << " "
                  << theNegTECR4Beam6RecHits.at(5) << " " << theNegTECR4Beam6RecHits.at(6) << " "
                  << theNegTECR4Beam6RecHits.at(7) << " " << theNegTECR4Beam6RecHits.at(8);
-  LogDebug("RecoAnalyzer") << "TEC- R4 Beam 7 RecHits: " << theNegTECR4Beam7RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC- R4 Beam 7 RecHits: " << theNegTECR4Beam7RecHits.at(0) << " "
                  << theNegTECR4Beam7RecHits.at(1) << " " << theNegTECR4Beam7RecHits.at(2) << " "
                  << theNegTECR4Beam7RecHits.at(3) << " " << theNegTECR4Beam7RecHits.at(4) << " "
                  << theNegTECR4Beam7RecHits.at(5) << " " << theNegTECR4Beam7RecHits.at(6) << " "
                  << theNegTECR4Beam7RecHits.at(7) << " " << theNegTECR4Beam7RecHits.at(8);
 
-  LogDebug("RecoAnalyzer") << "TEC- R6 Beam 0 RecHits: " << theNegTECR6Beam0RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC- R6 Beam 0 RecHits: " << theNegTECR6Beam0RecHits.at(0) << " "
                  << theNegTECR6Beam0RecHits.at(1) << " " << theNegTECR6Beam0RecHits.at(2) << " " 
                  << theNegTECR6Beam0RecHits.at(3) << " " << theNegTECR6Beam0RecHits.at(4) << " "
                  << theNegTECR6Beam0RecHits.at(5) << " " << theNegTECR6Beam0RecHits.at(6) << " "
                  << theNegTECR6Beam0RecHits.at(7) << " " << theNegTECR6Beam0RecHits.at(8);
-  LogDebug("RecoAnalyzer") << "TEC- R6 Beam 1 RecHits: " << theNegTECR6Beam1RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC- R6 Beam 1 RecHits: " << theNegTECR6Beam1RecHits.at(0) << " "
                  << theNegTECR6Beam1RecHits.at(1) << " " << theNegTECR6Beam1RecHits.at(2) << " "
                  << theNegTECR6Beam1RecHits.at(3) << " " << theNegTECR6Beam1RecHits.at(4) << " "
                  << theNegTECR6Beam1RecHits.at(5) << " " << theNegTECR6Beam1RecHits.at(6) << " "
                  << theNegTECR6Beam1RecHits.at(7) << " " << theNegTECR6Beam1RecHits.at(8);
-  LogDebug("RecoAnalyzer") << "TEC- R6 Beam 2 RecHits: " << theNegTECR6Beam2RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC- R6 Beam 2 RecHits: " << theNegTECR6Beam2RecHits.at(0) << " "
                  << theNegTECR6Beam2RecHits.at(1) << " " << theNegTECR6Beam2RecHits.at(2) << " "
                  << theNegTECR6Beam2RecHits.at(3) << " " << theNegTECR6Beam2RecHits.at(4) << " "
                  << theNegTECR6Beam2RecHits.at(5) << " " << theNegTECR6Beam2RecHits.at(6) << " "
                  << theNegTECR6Beam2RecHits.at(7) << " " << theNegTECR6Beam2RecHits.at(8);
-  LogDebug("RecoAnalyzer") << "TEC- R6 Beam 3 RecHits: " << theNegTECR6Beam3RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC- R6 Beam 3 RecHits: " << theNegTECR6Beam3RecHits.at(0) << " "
                  << theNegTECR6Beam3RecHits.at(1) << " " << theNegTECR6Beam3RecHits.at(2) << " "
                  << theNegTECR6Beam3RecHits.at(3) << " " << theNegTECR6Beam3RecHits.at(4) << " "
                  << theNegTECR6Beam3RecHits.at(5) << " " << theNegTECR6Beam3RecHits.at(6) << " "
                  << theNegTECR6Beam3RecHits.at(7) << " " << theNegTECR6Beam3RecHits.at(8);
-  LogDebug("RecoAnalyzer") << "TEC- R6 Beam 4 RecHits: " << theNegTECR6Beam4RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC- R6 Beam 4 RecHits: " << theNegTECR6Beam4RecHits.at(0) << " "
                  << theNegTECR6Beam4RecHits.at(1) << " " << theNegTECR6Beam4RecHits.at(2) << " "
                  << theNegTECR6Beam4RecHits.at(3) << " " << theNegTECR6Beam4RecHits.at(4) << " "
                  << theNegTECR6Beam4RecHits.at(5) << " " << theNegTECR6Beam4RecHits.at(6) << " "
                  << theNegTECR6Beam4RecHits.at(7) << " " << theNegTECR6Beam4RecHits.at(8);
-  LogDebug("RecoAnalyzer") << "TEC- R6 Beam 5 RecHits: " << theNegTECR6Beam5RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC- R6 Beam 5 RecHits: " << theNegTECR6Beam5RecHits.at(0) << " "
                  << theNegTECR6Beam5RecHits.at(1) << " " << theNegTECR6Beam5RecHits.at(2) << " "
                  << theNegTECR6Beam5RecHits.at(3) << " " << theNegTECR6Beam5RecHits.at(4) << " "
                  << theNegTECR6Beam5RecHits.at(5) << " " << theNegTECR6Beam5RecHits.at(6) << " "
                  << theNegTECR6Beam5RecHits.at(7) << " " << theNegTECR6Beam5RecHits.at(8);
-  LogDebug("RecoAnalyzer") << "TEC- R6 Beam 6 RecHits: " << theNegTECR6Beam6RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC- R6 Beam 6 RecHits: " << theNegTECR6Beam6RecHits.at(0) << " "
                  << theNegTECR6Beam6RecHits.at(1) << " " << theNegTECR6Beam6RecHits.at(2) << " "
                  << theNegTECR6Beam6RecHits.at(3) << " " << theNegTECR6Beam6RecHits.at(4) << " "
                  << theNegTECR6Beam6RecHits.at(5) << " " << theNegTECR6Beam6RecHits.at(6) << " "
                  << theNegTECR6Beam6RecHits.at(7) << " " << theNegTECR6Beam6RecHits.at(8);
-  LogDebug("RecoAnalyzer") << "TEC- R6 Beam 7 RecHits: " << theNegTECR6Beam7RecHits.at(0) << " "
+  LogDebug("RecoAnalyzer:RecHits") << "TEC- R6 Beam 7 RecHits: " << theNegTECR6Beam7RecHits.at(0) << " "
                  << theNegTECR6Beam7RecHits.at(1) << " " << theNegTECR6Beam7RecHits.at(2) << " "
                  << theNegTECR6Beam7RecHits.at(3) << " " << theNegTECR6Beam7RecHits.at(4) << " "
                  << theNegTECR6Beam7RecHits.at(5) << " " << theNegTECR6Beam7RecHits.at(6) << " "
