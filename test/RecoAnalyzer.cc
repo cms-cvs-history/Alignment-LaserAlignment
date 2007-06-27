@@ -1,8 +1,8 @@
 /** \file RecoAnalyzer.cc
 *  Analyzer program for Reco results
   *
-  *  $Date: 2007/06/18 09:13:48 $
-  *  $Revision: 1.7 $
+  *  $Date: 2007/06/26 06:21:30 $
+  *  $Revision: 1.8 $
   *  \author Maarten Thomas
  */
 
@@ -56,39 +56,39 @@ RecoAnalyzer::~RecoAnalyzer()
 
 void RecoAnalyzer::analyze(edm::Event const& theEvent, edm::EventSetup const& theSetup) 
 {
-  thePosTECR4Beam0RecHits.empty();
-  thePosTECR4Beam1RecHits.empty();
-  thePosTECR4Beam2RecHits.empty();
-  thePosTECR4Beam3RecHits.empty();
-  thePosTECR4Beam4RecHits.empty();
-  thePosTECR4Beam5RecHits.empty();
-  thePosTECR4Beam6RecHits.empty();
-  thePosTECR4Beam7RecHits.empty();
-  thePosTECR6Beam0RecHits.empty();
-  thePosTECR6Beam1RecHits.empty();
-  thePosTECR6Beam2RecHits.empty();
-  thePosTECR6Beam3RecHits.empty();
-  thePosTECR6Beam4RecHits.empty();
-  thePosTECR6Beam5RecHits.empty();
-  thePosTECR6Beam6RecHits.empty();
-  thePosTECR6Beam7RecHits.empty();
+  thePosTECR4Beam0RecHits.clear();
+  thePosTECR4Beam1RecHits.clear();
+  thePosTECR4Beam2RecHits.clear();
+  thePosTECR4Beam3RecHits.clear();
+  thePosTECR4Beam4RecHits.clear();
+  thePosTECR4Beam5RecHits.clear();
+  thePosTECR4Beam6RecHits.clear();
+  thePosTECR4Beam7RecHits.clear();
+  thePosTECR6Beam0RecHits.clear();
+  thePosTECR6Beam1RecHits.clear();
+  thePosTECR6Beam2RecHits.clear();
+  thePosTECR6Beam3RecHits.clear();
+  thePosTECR6Beam4RecHits.clear();
+  thePosTECR6Beam5RecHits.clear();
+  thePosTECR6Beam6RecHits.clear();
+  thePosTECR6Beam7RecHits.clear();
 
-  theNegTECR4Beam0RecHits.empty();
-  theNegTECR4Beam1RecHits.empty();
-  theNegTECR4Beam2RecHits.empty();
-  theNegTECR4Beam3RecHits.empty();
-  theNegTECR4Beam4RecHits.empty();
-  theNegTECR4Beam5RecHits.empty();
-  theNegTECR4Beam6RecHits.empty();
-  theNegTECR4Beam7RecHits.empty();
-  theNegTECR6Beam0RecHits.empty();
-  theNegTECR6Beam1RecHits.empty();
-  theNegTECR6Beam2RecHits.empty();
-  theNegTECR6Beam3RecHits.empty();
-  theNegTECR6Beam4RecHits.empty();
-  theNegTECR6Beam5RecHits.empty();
-  theNegTECR6Beam6RecHits.empty();
-  theNegTECR6Beam7RecHits.empty();
+  theNegTECR4Beam0RecHits.clear();
+  theNegTECR4Beam1RecHits.clear();
+  theNegTECR4Beam2RecHits.clear();
+  theNegTECR4Beam3RecHits.clear();
+  theNegTECR4Beam4RecHits.clear();
+  theNegTECR4Beam5RecHits.clear();
+  theNegTECR4Beam6RecHits.clear();
+  theNegTECR4Beam7RecHits.clear();
+  theNegTECR6Beam0RecHits.clear();
+  theNegTECR6Beam1RecHits.clear();
+  theNegTECR6Beam2RecHits.clear();
+  theNegTECR6Beam3RecHits.clear();
+  theNegTECR6Beam4RecHits.clear();
+  theNegTECR6Beam5RecHits.clear();
+  theNegTECR6Beam6RecHits.clear();
+  theNegTECR6Beam7RecHits.clear();
 
   for( unsigned int i = 0; i < 9; ++i )
   {
