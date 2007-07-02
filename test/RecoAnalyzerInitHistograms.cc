@@ -1,8 +1,8 @@
 /** \file RecoAnalyzerInitHistograms.cc
  *  Init histograms for the RecoAnalyzer
  *
- *  $Date: 2007/06/17 12:34:21 $
- *  $Revision: 1.4 $
+ *  $Date: 2007/06/18 08:57:41 $
+ *  $Revision: 1.5 $
  *  \author Maarten Thomas
  */
 
@@ -1170,11 +1170,11 @@ void RecoAnalyzer::initHistograms()
   theRecHitPositionsYvsX->SetDirectory(RecHitDir);
   theRecHitPositionsYvsX->Sumw2();
   theRecHitPositionsPhivsZ = new TH2D("RecHitPositionsPhivsZ","Phi vs Z position of the RecHits",
-				      600, -300.0, 300.0, 70, -3.5, 3.5);
+				      2400, -300.0, 300.0, 700, -3.5, 3.5);
   theRecHitPositionsPhivsZ->SetDirectory(RecHitDir);
   theRecHitPositionsPhivsZ->Sumw2();
   theRecHitPositionsRvsZ = new TH2D("RecHitPositionsRvsZ","R vs Z position of the RecHits",
-				    600, -300.0, 300.0, 200, -100.0, 100.0);
+				    2400, -300.0, 300.0, 1000, 0.0, 100.0);
   theRecHitPositionsRvsZ->SetDirectory(RecHitDir);
   theRecHitPositionsRvsZ->Sumw2();
   // }}}
