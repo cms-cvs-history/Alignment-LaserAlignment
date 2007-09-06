@@ -1,5 +1,8 @@
 # configuration of the Laser Clusterizer
 #
+include "CommonTools/SiStripZeroSuppression/data/SiStripNoiseService.cfi"
+
+
 module siStripClusters = LaserClusterizer
 {
   string ClusterMode = "LaserBeamClusterizer"
@@ -28,4 +31,9 @@ module siStripClusters = LaserClusterizer
      #   string DigiLabel    = "fromScopeMode" 
      # }
   } 
+
+  ##
+  ##Parameters to configure SiStripNoiseService 
+  ##
+  using SiStripNoiseServiceParameters
 }
