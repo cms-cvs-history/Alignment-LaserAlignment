@@ -1,12 +1,13 @@
 /** \file RecoAnalyzerInitHistograms.cc
  *  Init histograms for the RecoAnalyzer
  *
- *  $Date: 2007/06/18 08:57:41 $
- *  $Revision: 1.5 $
+ *  $Date: 2007/07/02 15:25:18 $
+ *  $Revision: 1.6 $
  *  \author Maarten Thomas
  */
 
 #include "Alignment/LaserAlignment/test/RecoAnalyzer.h"
+#include "TFile.h" 
 
 void RecoAnalyzer::initHistograms()
 {

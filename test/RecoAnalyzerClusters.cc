@@ -1,12 +1,15 @@
 /** \file RecoAnalyzerClusters.cc
  *  some plots for SiStripClusters
  *
- *  $Date: Sun Mar 18 19:55:09 CET 2007 $
- *  $Revision: 1.1 $
+ *  $Date: 2007/03/18 19:00:21 $
+ *  $Revision: 1.2 $
  *  \author Maarten Thomas
  */
 
 #include "Alignment/LaserAlignment/test/RecoAnalyzer.h"
+#include "FWCore/Framework/interface/Event.h" 
+#include "DataFormats/Common/interface/DetSetVector.h" 
+#include "DataFormats/SiStripCluster/interface/SiStripCluster.h" 
 
 void RecoAnalyzer::trackerClusters(edm::Event const& theEvent, edm::EventSetup const& theSetup)
 {

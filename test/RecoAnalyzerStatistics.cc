@@ -1,12 +1,25 @@
 /** \file RecoAnalyzerStatistics.cc
  *  Statistics for the RecoAnalyzer
  *
- *  $Date: Sun Mar 18 19:55:47 CET 2007 $
- *  $Revision: 1.1 $
+ *  $Date: 2007/03/18 19:00:21 $
+ *  $Revision: 1.2 $
  *  \author Maarten Thomas
  */
 
 #include "Alignment/LaserAlignment/test/RecoAnalyzer.h"
+#include "FWCore/Framework/interface/Event.h" 
+#include "FWCore/Framework/interface/ESHandle.h" 
+#include "FWCore/ParameterSet/interface/ParameterSet.h" 
+#include "FWCore/Framework/interface/EventSetup.h" 
+#include "Geometry/TrackerGeometryBuilder/interface/TrackerGeometry.h" 
+#include "Geometry/Records/interface/TrackerDigiGeometryRecord.h" 
+#include "Geometry/TrackerGeometryBuilder/interface/StripGeomDetUnit.h" 
+#include "DataFormats/DetId/interface/DetId.h" 
+#include "DataFormats/SiStripDetId/interface/StripSubdetector.h" 
+#include "DataFormats/SiStripDetId/interface/TECDetId.h" 
+#include "DataFormats/SiStripDetId/interface/TIBDetId.h" 
+#include "DataFormats/SiStripDetId/interface/TOBDetId.h" 
+#include "DataFormats/Common/interface/DetSetVector.h" 
 
 void RecoAnalyzer::trackerStatistics(edm::Event const& theEvent,edm::EventSetup const& theSetup)
 {

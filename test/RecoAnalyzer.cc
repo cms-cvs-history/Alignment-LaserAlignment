@@ -1,12 +1,16 @@
 /** \file RecoAnalyzer.cc
 *  Analyzer program for Reco results
   *
-  *  $Date: 2007/06/26 06:21:30 $
-  *  $Revision: 1.8 $
+  *  $Date: 2007/06/27 09:42:46 $
+  *  $Revision: 1.9 $
   *  \author Maarten Thomas
  */
 
 #include "Alignment/LaserAlignment/test/RecoAnalyzer.h"
+#include "FWCore/ParameterSet/interface/ParameterSet.h" 
+#include "FWCore/Utilities/interface/EDMException.h" 
+#include "FWCore/MessageLogger/interface/MessageLogger.h" 
+#include "TFile.h" 
 
   RecoAnalyzer::RecoAnalyzer(edm::ParameterSet const& theConf) 
   : theSearchPhiTIB(theConf.getUntrackedParameter<double>("SearchWindowPhiTIB",0.05)),

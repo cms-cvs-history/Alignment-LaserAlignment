@@ -4,15 +4,14 @@
 /** \class ExpectedAlignmentCorrectionsCalculator
  *  Calculate the expected alignment corrections from the applied misalignments
  *
- *  $Date: Sun Mar 18 19:48:56 CET 2007 $
- *  $Revision: 1.1 $
+ *  $Date: 2007/03/18 19:00:21 $
+ *  $Revision: 1.2 $
  *  \author Maarten Thomas
  */
 
 #include "FWCore/Framework/interface/Frameworkfwd.h"
 #include "FWCore/Framework/interface/EDAnalyzer.h"
 
-#include "FWCore/Framework/interface/Event.h"
 
 #include "FWCore/ParameterSet/interface/ParameterSet.h"
 

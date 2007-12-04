@@ -1,12 +1,16 @@
 /** \file ReadLaserRecHit.cc
  *  small test program to read the RecHits from the laser beams
  *
- *  $Date: Sun Mar 18 19:50:12 CET 2007 $
- *  $Revision: 1.1 $
+ *  $Date: 2007/03/18 19:00:21 $
+ *  $Revision: 1.2 $
  *  \author Maarten Thomas
  */
 
 #include "Alignment/LaserAlignment/test/ReadLaserRecHit.h"
+#include "DataFormats/Common/interface/Handle.h" 
+#include "FWCore/Framework/interface/Event.h" 
+#include "DataFormats/TrackerRecHit2D/interface/SiStripRecHit2DCollection.h" 
+#include "DataFormats/TrackerRecHit2D/interface/SiStripMatchedRecHit2DCollection.h" 
 
 ReadLaserRecHit::ReadLaserRecHit(edm::ParameterSet const& conf) : 
   readRecHitAlgorithm_(conf) ,

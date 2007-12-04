@@ -4,55 +4,21 @@
 /** \class RecoAnalyzer
  *  Analyzer program to make some plots for the reconstruction
  *
- *  $Date: 2007/06/18 08:57:41 $
- *  $Revision: 1.10 $
+ *  $Date: 2007/06/18 09:07:24 $
+ *  $Revision: 1.11 $
  *  \author Maarten Thomas
  */
 
 #include "FWCore/Framework/interface/EDAnalyzer.h"
-#include "FWCore/Framework/interface/Event.h"
-#include "FWCore/Framework/interface/ESHandle.h"
-#include "FWCore/ParameterSet/interface/ParameterSet.h"
-#include "FWCore/Framework/interface/EventSetup.h"
-#include "FWCore/Framework/interface/Selector.h"
-#include "FWCore/Framework/interface/MakerMacros.h"
-#include "FWCore/Utilities/interface/EDMException.h"
-#include "FWCore/ServiceRegistry/interface/Service.h"
-#include "FWCore/MessageLogger/interface/MessageLogger.h"
 
-#include "Geometry/TrackerGeometryBuilder/interface/TrackerGeometry.h"
-#include "Geometry/Records/interface/TrackerDigiGeometryRecord.h"
-#include "Geometry/TrackerNumberingBuilder/interface/GeometricDet.h"
-#include "Geometry/CommonTopologies/interface/PixelTopology.h"
-#include "Geometry/CommonTopologies/interface/StripTopology.h"
-#include "Geometry/TrackerGeometryBuilder/interface/PixelGeomDetType.h"
-#include "Geometry/TrackerGeometryBuilder/interface/StripGeomDetType.h"
-#include "Geometry/TrackerGeometryBuilder/interface/PixelGeomDetUnit.h"
-#include "Geometry/TrackerGeometryBuilder/interface/StripGeomDetUnit.h"
-#include "DataFormats/GeometrySurface/interface/BoundSurface.h"
-#include "DataFormats/GeometryVector/interface/GlobalPoint.h"
-#include "DataFormats/DetId/interface/DetId.h"
 
-#include "DataFormats/SiStripDetId/interface/StripSubdetector.h"
-#include "DataFormats/SiStripDetId/interface/TECDetId.h"
-#include "DataFormats/SiStripDetId/interface/TIBDetId.h"
-#include "DataFormats/SiStripDetId/interface/TOBDetId.h"
 #include "DataFormats/SiStripDigi/interface/SiStripDigi.h"
-#include "DataFormats/Common/interface/DetSetVector.h"
-#include "DataFormats/SiStripCluster/interface/SiStripCluster.h"
-#include "DataFormats/TrackerRecHit2D/interface/SiStripRecHit2DCollection.h"
 #include "DataFormats/TrackerRecHit2D/interface/SiStripMatchedRecHit2DCollection.h"
 
-#include "DataFormats/TrackCandidate/interface/TrackCandidateCollection.h"
-#include "DataFormats/TrackCandidate/interface/TrackCandidate.h"
-#include "DataFormats/TrackReco/interface/Track.h"
-#include "DataFormats/TrackReco/interface/TrackFwd.h"
 
 // ROOT
 #include "TH1.h"
 #include "TH2.h"
-#include "TString.h"
-#include "TFile.h"
 #include "TObject.h"
 
 #include <iostream>
