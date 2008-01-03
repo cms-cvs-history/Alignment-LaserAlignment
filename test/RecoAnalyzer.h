@@ -4,8 +4,8 @@
 /** \class RecoAnalyzer
  *  Analyzer program to make some plots for the reconstruction
  *
- *  $Date: 2007/06/18 09:07:24 $
- *  $Revision: 1.11 $
+ *  $Date: 2007/12/04 23:51:50 $
+ *  $Revision: 1.12 $
  *  \author Maarten Thomas
  */
 
@@ -20,6 +20,7 @@
 #include "TH1.h"
 #include "TH2.h"
 #include "TObject.h"
+class TFile;
 
 #include <iostream>
 
