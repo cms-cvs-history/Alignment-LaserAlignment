@@ -1,0 +1,21 @@
+
+
+# LaserAlignmentT0Producer (AlCaRECO producer for the LAS data running on T0)
+#
+# VPSet DigiProducersList is a list of all
+# possible input digi products as defined in:
+# EventFilter/SiStripRawToDigiModule/plugins/SiStripRawToDigiModule.cc
+
+module laserAlignmentT0Producer = LaserAlignmentT0Producer {
+  VPSet DigiProducerList = {
+    { string DigiProducer = "SiStripDigis"
+      string DigiLabel    = "ZeroSuppressed" },
+    { string DigiProducer = "SiStripDigis"
+      string DigiLabel    = "VirginRaw" },
+    { string DigiProducer = "SiStripDigis"
+      string DigiLabel    = "ProcessedRaw" },
+    { string DigiProducer = "SiStripDigis"
+      string DigiLabel    = "ScopeMode" }
+    } 
+  }
+}
