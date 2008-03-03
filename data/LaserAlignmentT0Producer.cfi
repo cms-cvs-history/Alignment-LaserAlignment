@@ -5,17 +5,27 @@
 # VPSet DigiProducersList is a list of all
 # possible input digi products as defined in:
 # EventFilter/SiStripRawToDigiModule/plugins/SiStripRawToDigiModule.cc
+#
+# The additional DigiType has to be specified to tell the
+# producer if the corresponding DetSet contains 
+# SiStripDigis (="Processed") or SiStripRawDigis (="Raw").
+# With this feature we keep the possibility to switch to
+# another producer if necessary by changing only the .cfg
+#
 
 module laserAlignmentT0Producer = LaserAlignmentT0Producer {
   VPSet DigiProducerList = {
     { string DigiProducer = "SiStripDigis"
-      string DigiLabel    = "ZeroSuppressed" },
+      string DigiLabel    = "ZeroSuppressed"
+      string DigiType     = "Processed" },
     { string DigiProducer = "SiStripDigis"
-      string DigiLabel    = "VirginRaw" },
+      string DigiLabel    = "VirginRaw" 
+      string DigiType     = "Raw" },
     { string DigiProducer = "SiStripDigis"
-      string DigiLabel    = "ProcessedRaw" },
+      string DigiLabel    = "ProcessedRaw"
+      string DigiType     = "Raw" },
     { string DigiProducer = "SiStripDigis"
-      string DigiLabel    = "ScopeMode" }
-    } 
+      string DigiLabel    = "ScopeMode" 
+      string DigiType     = "Raw" }
   }
 }
