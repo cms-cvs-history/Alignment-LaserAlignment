@@ -5,6 +5,10 @@
 #
 # this case: NO misalignment
 #
+
+include "Alignment/LaserAlignment/data/BeamProfileFitter.cff"
+include "Alignment/LaserAlignment/data/LaserAlignmentAlgorithm.cff"
+
 module LaserAlignment = LaserAlignment 
 {
     untracked int32 NumberOfEventsPerLaserIntensity = 1000
@@ -28,11 +32,11 @@ module LaserAlignment = LaserAlignment
     untracked int32 MinAdcCounts = 0
     
     # configuration of the BeamProfileFitter
-    include "Alignment/LaserAlignment/data/BeamProfileFitter.cff"
-    
+    using BeamProfileFitterBlock
+       
     # configuration of the AlignmentAlgorithm
-    include "Alignment/LaserAlignment/data/LaserAlignmentAlgorithm.cff"
-	untracked bool UseBeamSplitterFrame = true
+    using LaserAlignmentAlgorithm
+ 	untracked bool UseBeamSplitterFrame = true
     
     # list of digi producers
     VPSet DigiProducersList = 

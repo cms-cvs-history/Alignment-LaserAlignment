@@ -5,6 +5,10 @@
 #
 # this case: only rotations as misalignments
 #
+
+include "Alignment/LaserAlignment/data/BeamProfileFitter.cff"
+include "Alignment/LaserAlignment/data/LaserAlignmentAlgorithm.cff"
+
 module LaserAlignmentShiftsAndRotations = LaserAlignment 
 {
     untracked int32 NumberOfEventsPerLaserIntensity = 1000
@@ -28,12 +32,12 @@ module LaserAlignmentShiftsAndRotations = LaserAlignment
     untracked int32 MinAdcCounts = 0
     
     # configuration of the BeamProfileFitter
-    include "Alignment/LaserAlignment/data/BeamProfileFitter.cff"
-	untracked bool UseBeamSplitterFrame = true
-    
+    using BeamProfileFitterBlock
+       
     # configuration of the AlignmentAlgorithm
-    include "Alignment/LaserAlignment/data/LaserAlignmentAlgorithm.cff"
-    
+    using LaserAlignmentAlgorithm
+	untracked bool UseBeamSplitterFrame = true
+        
     # list of digi producers
     VPSet DigiProducersList = 
     {
