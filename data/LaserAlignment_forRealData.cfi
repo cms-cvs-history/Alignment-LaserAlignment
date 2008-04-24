@@ -41,7 +41,7 @@ module LaserAlignment = LaserAlignment
     # list of digi producers
     VPSet DigiProducersList = 
     {
-        { string DigiProducer = "SiStripDigis"
+        { string DigiProducer = "siStripDigis"
             string DigiLabel    = "ZeroSuppressed"
         },
         { string DigiProducer = "siStripZeroSuppression"

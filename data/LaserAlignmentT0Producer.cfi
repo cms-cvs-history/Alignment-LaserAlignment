@@ -15,16 +15,16 @@
 
 module laserAlignmentT0Producer = LaserAlignmentT0Producer {
   VPSet DigiProducerList = {
-    { string DigiProducer = "SiStripDigis"
+    { string DigiProducer = "siStripDigis"
       string DigiLabel    = "ZeroSuppressed"
       string DigiType     = "Processed" },
-    { string DigiProducer = "SiStripDigis"
+    { string DigiProducer = "siStripDigis"
       string DigiLabel    = "VirginRaw" 
       string DigiType     = "Raw" },
-    { string DigiProducer = "SiStripDigis"
+    { string DigiProducer = "siStripDigis"
       string DigiLabel    = "ProcessedRaw"
       string DigiType     = "Raw" },
-    { string DigiProducer = "SiStripDigis"
+    { string DigiProducer = "siStripDigis"
       string DigiLabel    = "ScopeMode" 
       string DigiType     = "Raw" }
   }
