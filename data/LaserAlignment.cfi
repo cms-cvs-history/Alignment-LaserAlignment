@@ -31,6 +31,7 @@ module LaserAlignment = LaserAlignment
     untracked double SearchWindowZTOB = 1.0
     untracked double PhiErrorScalingFactor = 1.0
     untracked int32 MinAdcCounts = 0
+    untracked bool SubtractPedestals = true
     
     # configuration of the BeamProfileFitter
     using BeamProfileFitterBlock
