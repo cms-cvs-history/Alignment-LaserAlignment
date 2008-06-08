@@ -1,7 +1,6 @@
 # configuration of the Laser Clusterizer
 #
-include "CommonTools/SiStripZeroSuppression/data/SiStripNoiseService.cfi"
-
+include "CalibTracker/Configuration/data/SiStripNoise/SiStripNoise_Frontier.cff"
 
 module siStripClusters = LaserClusterizer
 {
@@ -32,8 +31,4 @@ module siStripClusters = LaserClusterizer
      # }
   } 
 
-  ##
-  ##Parameters to configure SiStripNoiseService 
-  ##
-  using SiStripNoiseServiceParameters
 }
