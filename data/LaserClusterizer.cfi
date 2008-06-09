@@ -1,6 +1,5 @@
 # configuration of the Laser Clusterizer
 #
-include "CalibTracker/Configuration/data/SiStripNoise/SiStripNoise_Frontier.cff"
 
 module siStripClusters = LaserClusterizer
 {
