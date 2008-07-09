@@ -43,13 +43,17 @@ module LaserAlignment = LaserAlignment  {
     untracked double SearchWindowZTOB = 1.0
     untracked double PhiErrorScalingFactor = 1.0
     untracked int32 MinAdcCounts = 0
-    
-    # do pedestal subtraction. DISABLE THIS for simulated data.
+
+    # do pedestal subtraction (ped from DB). DISABLE THIS for simulated data.
     untracked bool SubtractPedestals = true
 
     # enable the zero (empty profile) filter in the LASProfileJudge, so profiles without signal are rejected.
     # might want to disable this for simulated data with typically low signal level on the last disks
     untracked bool EnableJudgeZeroFilter = true
+
+    # if this is set to true, the geometry update is applied to the ideal geometry, not to the input geometry.
+    # should be set true only for geometry comparison purposes (see TkLasCMSSW Twiki for more details)
+    untracked bool UpdateFromIdealGeometry = false
 
     # configuration of the BeamProfileFitter
     using BeamProfileFitterBlock
