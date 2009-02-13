@@ -17,12 +17,13 @@ class LASGeometryUpdater {
   
  public:
   LASGeometryUpdater( LASGlobalData<LASCoordinateSet>& );
-  void EndcapUpdate( LASEndcapAlignmentParameterSet&, LASGlobalData<LASCoordinateSet>&, AlignableTracker& );
+  void EndcapUpdate( LASEndcapAlignmentParameterSet&, LASGlobalData<LASCoordinateSet>& );
   void TrackerUpdate( LASEndcapAlignmentParameterSet&, LASBarrelAlignmentParameterSet&, AlignableTracker& );
+  void SetReverseDirection( bool );
 
  private:
   LASGlobalData<LASCoordinateSet> nominalCoordinates;
-
+  bool isReverseDirection;
 
 };
 

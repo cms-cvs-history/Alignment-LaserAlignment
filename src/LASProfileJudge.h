@@ -16,14 +16,16 @@ class LASProfileJudge {
 
  public:
   LASProfileJudge();
-  bool IsSignalIn( const LASModuleProfile&, int );
-  bool JudgeProfile( const LASModuleProfile&, int );
+  bool IsSignalIn( const LASModuleProfile&, double );
+  bool JudgeProfile( const LASModuleProfile&, double );
   void EnableZeroFilter( bool );
 
  private:
   double GetNegativity( int );
   bool IsPeaksInProfile( int );
   bool IsNegativePeaksInProfile( int );
+  bool IsOverdrive( int );
+
   LASModuleProfile profile;
   std::pair<unsigned int, double> thePeak;
   bool isZeroFilter;
