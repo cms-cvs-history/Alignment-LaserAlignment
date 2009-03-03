@@ -17,7 +17,7 @@ LASPeakFinder::LASPeakFinder() {
 /// the pair<> will return mean/meanError (in strips);
 /// offset is necessary for tob modules which are hit off-center
 ///
-bool LASPeakFinder::FindPeakIn( const LASModuleProfile& aProfile, std::pair<double,double>& result, const int offset ) {
+bool LASPeakFinder::FindPeakIn( const LASModuleProfile& aProfile, std::pair<double,double>& result, const double offset ) {
 
   TH1D* histogram = new TH1D( "bufferHistogram", "bufferHistogram", 512, 0, 512 );
   TF1* fitFunction = new TF1( "fitFunction", "gaus" );
@@ -25,16 +25,22 @@ bool LASPeakFinder::FindPeakIn( const LASModuleProfile& aProfile, std::pair<doub
   std::pair<int,double> largestAmplitude( 0, 0. ); // strip, amplitude
   double anAmplitude = 0.;
 
+  // need approximate position -> cast to int
+  const int approxOffset = static_cast<int>( offset );
+
   // expected beam position (in strips)
-  const unsigned int meanPosition = 256. + offset;
+  const unsigned int meanPosition = 256 + approxOffset;
+
   // backplane "alignment hole" approx. half size (in strips)
   const unsigned int halfWindowSize = 33;
 
   // loop over the strips in the "alignment hole"
   // to fill the histogram
   // and determine fit parameter estimates
+  double sum0 = 0.; // this is the sum of all amplitudes
   for( unsigned int strip = meanPosition - halfWindowSize; strip < meanPosition + halfWindowSize; ++strip ) {
     anAmplitude = aProfile.GetValue( strip );
+    sum0 += anAmplitude;
     histogram->SetBinContent( 1 + strip, anAmplitude );
     if( anAmplitude > largestAmplitude.second ) {
       largestAmplitude.first = strip; largestAmplitude.second = anAmplitude;
@@ -48,6 +54,7 @@ bool LASPeakFinder::FindPeakIn( const LASModuleProfile& aProfile, std::pair<doub
   for( unsigned int strip = 0; strip < 512; ++strip ) {
     if( strip < meanPosition - halfWindowSize || strip > meanPosition + halfWindowSize ) {
       anAmplitude = aProfile.GetValue( strip );
+      sum0 += anAmplitude;
       sum1 += anAmplitude;
       sum2 += pow( anAmplitude, 2 );
       nStrips++;
@@ -58,8 +65,8 @@ bool LASPeakFinder::FindPeakIn( const LASModuleProfile& aProfile, std::pair<doub
   const double noise = sqrt( 1. / ( nStrips - 1 ) * ( sum2 - pow( sum1, 2 ) / nStrips ) );
 
   // empty profile?
-  if( fabs( sum1 ) < 1.e-3 ) {
-    std::cerr << " [LASPeakFinder::FindPeakIn] ** WARNING: Empty profile (sum=" << sum1 << ")." << std::endl;
+  if( fabs( sum0 ) < 1.e-3 ) {
+    std::cerr << " [LASPeakFinder::FindPeakIn] ** WARNING: Empty profile (sum=" << sum0 << ")." << std::endl;
     return false;
   }
 

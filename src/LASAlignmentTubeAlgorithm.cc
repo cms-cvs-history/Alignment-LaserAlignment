@@ -133,7 +133,6 @@ LASBarrelAlignmentParameterSet LASAlignmentTubeAlgorithm::CalculateParameters( L
     beamReducedZ[0] /= ( disk9EndFaceZPositions.at( 1 ) - disk9EndFaceZPositions.at( 0 ) );
     beamReducedZ[1] = disk9EndFaceZPositions.at( 1 ) - ( measuredCoordinates.GetTIBTOBEntry( det, beam, pos ).GetZ() - radialOffset ); // ZTPrimePrime
     beamReducedZ[1] /= ( disk9EndFaceZPositions.at( 1 ) - disk9EndFaceZPositions.at( 0 ) );
-    
 
     // residual in phi (in the formulas this corresponds to y_ik/R)
     const double phiResidual = measuredCoordinates.GetTIBTOBEntry( det, beam, pos ).GetPhi() - nominalCoordinates.GetTIBTOBEntry( det, beam, pos ).GetPhi();
@@ -254,7 +253,8 @@ LASBarrelAlignmentParameterSet LASAlignmentTubeAlgorithm::CalculateParameters( L
   
   
   // even more shortcuts before we can calculate the parameters
-  double beamDenominator = ( pow( sumOverZTPrimeZTPrimePrime, 2 ) - sumOverZTPrimeSquared * sumOverZTPrimePrimeSquared ) * beamRadii.at( 0 ); // latter is the TEC at beam radius (R4) ############ ????? 
+  // this one will be enabled later for the errors calculation
+  //  double beamDenominator = ( pow( sumOverZTPrimeZTPrimePrime, 2 ) - sumOverZTPrimeSquared * sumOverZTPrimePrimeSquared ) * beamRadii.at( 0 ); // latter is the TEC at beam radius (R4) ############ ????? 
 
   std::vector<double> alignmentDenominator( 6, 0. );
   std::vector<double> termA( 6, 0. ), termB( 6, 0. ), termC( 6, 0. ), termD( 6, 0. );
@@ -277,6 +277,9 @@ LASBarrelAlignmentParameterSet LASAlignmentTubeAlgorithm::CalculateParameters( L
 
   // can do this in one go for all halfbarrels
   for( int aHalfbarrel = 0; aHalfbarrel < 6; ++aHalfbarrel ) {
+
+
+    // no errors yet
 
     // rotation angles of the lower z endfaces (in rad)
     theResult.GetParameter( aHalfbarrel, 0, 0 ).first = ( sumOverPhiZPrime.at( aHalfbarrel ) * sumOverZPrimeZPrimePrime.at( aHalfbarrel ) * sumOverCosThetaSquared * sumOverSinThetaSquared
