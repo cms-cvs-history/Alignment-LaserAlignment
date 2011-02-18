@@ -24,7 +24,8 @@ LaserAlignmentEventFilter::LaserAlignmentEventFilter( const edm::ParameterSet& i
   cabling(0),
   cacheId_(0)
 {
-  edm::LogInfo("LasFilterConstructor");
+  // Read in FED collection Input Tag
+  FED_collection = iConfig.getParameter<std::string >("FedInputTag");
 
   // Read in Filter Lists
   std::vector<int> FED_IDs = iConfig.getParameter<std::vector<int> >("FED_IDs");
@@ -74,7 +75,7 @@ bool LaserAlignmentEventFilter::filter( edm::Event& iEvent, const edm::EventSetu
 
   // Retrieve FED raw data (by label, which is "source" by default)
   edm::Handle<FEDRawDataCollection> buffers;
-  iEvent.getByLabel( "source", buffers ); 
+  iEvent.getByLabel( FED_collection, buffers ); 
 
 
   std::vector<uint16_t>::const_iterator ifed = las_fed_ids.begin();
